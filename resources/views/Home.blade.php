@@ -37,7 +37,8 @@
 </head>
 
 <body>
-	<<<<<<< HEAD
+
+
 	<!-- ======= Header ======= -->
 	<header id="header" class="fixed-top ">
 		<div class="container d-flex align-items-center justify-content-between">
@@ -64,8 +65,6 @@
 
 				</ul>
 			</nav><!-- .nav-menu -->
-
-
 		</div>
 	</header><!-- End Header -->
 
@@ -80,13 +79,10 @@
 				</div>
 			</div>
 
-
-
 		</div>
 	</section><!-- End Hero -->
 
 	<main id="main">
-
 		<!-- ======= About Section ======= -->
 		<section id="about" class="about">
 			<div class="container" data-aos="fade-up">
@@ -168,7 +164,7 @@
 		</section><!-- End Features Section -->
 
 		<!-- ======= Services Section ======= -->
-		<section id="services" class="services">
+		<section id="" class="services">
 			<div class="container" data-aos="fade-up">
 
 				<div class="section-title">
@@ -229,9 +225,8 @@
 			</div>
 		</section><!-- End Cta Section -->
 
-		<!-- ======= Portfolio Section ======= -->
-		
-		<section id="portfolio" class="portfolio">
+		<!-- ======= our services Section ======= -->
+		<section id="services" class="portfolio">
 			<div class="container" data-aos="fade-up">
 
 				<div class="section-title">
@@ -304,47 +299,81 @@
 											Plenty of SMT and product assembly experience.
 										</p>
 										<ul>
-											<li><i class="ri-check-double-line"></i>Widely covered assembly technology from discrete device assembly to module assembly.</li>
+											<li>
+												<i class="ri-check-double-line"></i>Widely covered assembly technology from discrete device assembly to module assembly.
+											</li>
 										</ul>
 									</div>
 								</div>
-
 							</div>
 						</section>
 						<div class="row">
-							<div class="col-sm-4 align-middle" style="display: flex; align-items: center; flex-wrap: wrap;">
-								<img src="/assets/img/services/1.jpg" class="img-fluid" alt=""  style="height: 100%">
+							<div class="col-sm-4">
+								<img src="/assets/img/services/1.jpg" class="img-fluid" alt="" style="height: 100%">
 							</div>
 							<div class="col-sm-4">
-								<img src="/assets/img/services/2.jpg" class="img-fluid" alt="" style="height: 100%">
+								<img src="/assets/img/services/2.jpg" class="img-fluid" alt=""  style="height: 100%">
 							</div>
-							<div class="col-sm-4"> 
-								<img src="/assets/img/services/3.jpg" class="img-fluid" alt="" style="height: 100%">
+							<div class="col-sm-4">
+								<img src="/assets/img/services/3.jpg" class="img-fluid" alt=""  style="height: 100%">
 							</div>
 						</div>
 					</div>
+
 					<div class=" portfolio-item filter-metal">
 						<h1>Metal Stamping</h1>
 						<section class="about">
+							<div class="container aos-init aos-animate" data-aos="fade-up">
+								<div class="row">
+
+									<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+										<p>For over 5 years, Hana Master Jaya have done custom manufacturing in steel, aluminum, copper, and other metals. Our years of experience and tool capabilities are put to work to make your job easier. Hana Master assures the customers with reliability and quality.</p>
+									</div>
+
+									<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+
+									</div>
+								</div>
+
+							</div>    
 						</section>
 					</div>
 
+
+					<div class=" portfolio-item filter-wire">
+						<h1>Wire Harness</h1>
+						<section class="about">
+							<div class="container aos-init aos-animate" data-aos="fade-up">
+								<div class="row">
+
+									<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+										<p>Hana Master Jaya provides complete solutions including prototyping, validation and manufacturing of wiring harnesses for electrical and electronic equipment.</p>
+										<br>
+										<p>The complete vertical integration for manufacturing critical wiring harness components like wires, connectors, terminals, grommets, junction boxes, relay boxes, protectors etc., enables Hana Master Jaya to provide quality products with reduced time to market. The capability of designing and manufacturing of jigs, fixtures, applicators, circuit checking & assembly boards, supported by high quality facilities for wiring harness & component testing, makes the company a full system solutions provider.</p>
+									</div>
+
+									<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+
+									</div>
+								</div>
+
+							</div>    
+						</section>
+
+					</div>
+
+					<div class=" portfolio-item filter-power">
+						<h1>Power Transformer Assembly</h1>
+					</div>
+
+
+
+
 				</div>
 
-				<div class=" portfolio-item filter-wire">
-					<h1>Wire Harness</h1>
-					<section  class="about">
-					</section>
-				</div>	
 
-				<div class=" portfolio-item filter-power">
-					<h1>Power Transformer Assembly</h1>
-					<section class="about">
-					</section>
-				</div>
 
 			</div>
-
 		</section><!-- End Portfolio Section -->
 
 		<!-- ======= Counts Section ======= -->
@@ -465,8 +494,25 @@
 			</div>
 		</section><!-- End Testimonials Section -->
 
-		
-		@include('section.contact_us')
+		<!-- ======= Team Section ======= -->
+		@include("section.contact_us")
+
+		<!-- ======= Contact Section ======= -->
+		<section id="contact" class="contact">
+			<div class="container" data-aos="fade-up">
+
+				<div class="section-title">
+					<h2>Contact</h2>
+					<p>Contact Us</p>
+				</div>
+
+				<div>
+					<iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0760294489723!2d107.49498561407954!3d-6.881495395027322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e4dbaab21481%3A0x3e6715d778acd91f!2sPT%20Hana%20Master%20Jaya!5e0!3m2!1sen!2sid!4v1590090585296!5m2!1sen!2sid" frameborder="0" allowfullscreen></iframe>
+				</div>
+
+			</div>
+		</section><!-- End Contact Section -->
+
 	</main><!-- End #main -->
 
 	<!-- ======= Footer ======= -->
