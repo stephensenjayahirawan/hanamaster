@@ -37,6 +37,7 @@
 </head>
 
 <body>
+	<<<<<<< HEAD
 	<!-- ======= Header ======= -->
 	<header id="header" class="fixed-top ">
 		<div class="container d-flex align-items-center justify-content-between">
@@ -229,156 +230,121 @@
 		</section><!-- End Cta Section -->
 
 		<!-- ======= Portfolio Section ======= -->
+		
 		<section id="portfolio" class="portfolio">
 			<div class="container" data-aos="fade-up">
 
 				<div class="section-title">
-					<h2>Portfolio</h2>
-					<p>Check our Portfolio</p>
+					<h2 style="font-size:25px">Our Services</h2>
 				</div>
 
 				<div class="row" data-aos="fade-up" data-aos-delay="100">
 					<div class="col-lg-12 d-flex justify-content-center">
 						<ul id="portfolio-flters">
-							<li data-filter="*" class="filter-active">All</li>
-							<li data-filter=".filter-app">App</li>
-							<li data-filter=".filter-card">Card</li>
-							<li data-filter=".filter-web">Web</li>
+							<li data-filter=".filter-smt" class="filter-active">Surface Mount Technology (SMT)</li>
+							<li data-filter=".filter-metal">Metal Stamping</li>
+							<li data-filter=".filter-wire">Wire Harness</li>
+							<li data-filter=".filter-power">Power Transformer Assembly</li>
 						</ul>
 					</div>
 				</div>
+				<div class="row portfolio-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+					<div class=" portfolio-item filter-smt">
+						<h1>SMT (Surface Mount Technology)</h1>
+						<section  class="about">
+							<div class="container aos-init aos-animate" data-aos="fade-up">
 
-				<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+								<div class="row">
 
-					<div class="col-lg-4 col-md-6 portfolio-item filter-app">
-						<div class="portfolio-wrap">
-							<img src="/assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4>App 1</h4>
-								<p>App</p>
-								<div class="portfolio-links">
-									<a href="/assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-									<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+									<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+										<p class="font-italic">
+											State-of-the-art equipment for SMT.
+										</p>
+										<ul>
+											<li><i class="ri-check-double-line"></i>Solder cream printer</li>
+										</ul>
+
+										<p>
+											Fine-pitch printing by house made high-precision metal stencil.
+										</p>
+										<ul>
+											<li><i class="ri-check-double-line"></i>Mounter</li>
+										</ul>
+
+										<p>
+											Minimum Chip (0402), narrow gap
+										</p>
+										<ul>
+											<li><i class="ri-check-double-line"></i>AOI</li>
+											<li><i class="ri-check-double-line"></i>Reflow equipment</li>
+											<li><i class="ri-check-double-line"></i>Cleaning equipment</li>
+										</ul>
+
+										<p>
+											Flux cleansing (direct path methods)
+										</p>
+										<ul>
+											<li><i class="ri-check-double-line"></i>X-ray inspection equipment</li>
+										</ul>
+
+
+									</div>
+									<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+
+										<p>
+											Plant's utilities that was enhanced with clean environment
+										</p>
+										<ul>
+											<li><i class="ri-check-double-line"></i>Surface Mounting and assembly in a clean room condition.</li>
+											<li><i class="ri-check-double-line"></i>Optimum temperature and humidity environment (20-28℃/40-70%) for electronic packaging</li>
+											<li><i class="ri-check-double-line"></i>Electrostatic discharge of factory area (100 V or less)</li>
+										</ul>
+
+										<p>
+											Plenty of SMT and product assembly experience.
+										</p>
+										<ul>
+											<li><i class="ri-check-double-line"></i>Widely covered assembly technology from discrete device assembly to module assembly.</li>
+										</ul>
+									</div>
 								</div>
+
+							</div>
+						</section>
+						<div class="row">
+							<div class="col-sm-4 align-middle" style="display: flex; align-items: center; flex-wrap: wrap;">
+								<img src="/assets/img/services/1.jpg" class="img-fluid" alt=""  style="height: 100%">
+							</div>
+							<div class="col-sm-4">
+								<img src="/assets/img/services/2.jpg" class="img-fluid" alt="" style="height: 100%">
+							</div>
+							<div class="col-sm-4"> 
+								<img src="/assets/img/services/3.jpg" class="img-fluid" alt="" style="height: 100%">
 							</div>
 						</div>
 					</div>
-
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web">
-						<div class="portfolio-wrap">
-							<img src="/assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4>Web 3</h4>
-								<p>Web</p>
-								<div class="portfolio-links">
-									<a href="/assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-									<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6 portfolio-item filter-app">
-						<div class="portfolio-wrap">
-							<img src="/assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4>App 2</h4>
-								<p>App</p>
-								<div class="portfolio-links">
-									<a href="/assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-									<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6 portfolio-item filter-card">
-						<div class="portfolio-wrap">
-							<img src="/assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4>Card 2</h4>
-								<p>Card</p>
-								<div class="portfolio-links">
-									<a href="/assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-									<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web">
-						<div class="portfolio-wrap">
-							<img src="/assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4>Web 2</h4>
-								<p>Web</p>
-								<div class="portfolio-links">
-									<a href="/assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-									<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6 portfolio-item filter-app">
-						<div class="portfolio-wrap">
-							<img src="/assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4>App 3</h4>
-								<p>App</p>
-								<div class="portfolio-links">
-									<a href="/assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
-									<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6 portfolio-item filter-card">
-						<div class="portfolio-wrap">
-							<img src="/assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4>Card 1</h4>
-								<p>Card</p>
-								<div class="portfolio-links">
-									<a href="/assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
-									<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6 portfolio-item filter-card">
-						<div class="portfolio-wrap">
-							<img src="/assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4>Card 3</h4>
-								<p>Card</p>
-								<div class="portfolio-links">
-									<a href="/assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
-									<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web">
-						<div class="portfolio-wrap">
-							<img src="/assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4>Web 3</h4>
-								<p>Web</p>
-								<div class="portfolio-links">
-									<a href="/assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-									<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-								</div>
-							</div>
-						</div>
+					<div class=" portfolio-item filter-metal">
+						<h1>Metal Stamping</h1>
+						<section class="about">
+						</section>
 					</div>
 
 				</div>
 
+				<div class=" portfolio-item filter-wire">
+					<h1>Wire Harness</h1>
+					<section  class="about">
+					</section>
+				</div>	
+
+				<div class=" portfolio-item filter-power">
+					<h1>Power Transformer Assembly</h1>
+					<section class="about">
+					</section>
+				</div>
+
 			</div>
+
 		</section><!-- End Portfolio Section -->
 
 		<!-- ======= Counts Section ======= -->
@@ -569,7 +535,6 @@
 
 	<!-- Template Main JS File -->
 	<script src="/assets/js/main.js"></script>
-
 </body>
 
 </html>
