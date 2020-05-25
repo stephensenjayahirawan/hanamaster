@@ -167,7 +167,7 @@
     </section><!-- End Features Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <section id="" class="services">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -228,8 +228,8 @@
       </div>
     </section><!-- End Cta Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <!-- ======= our services Section ======= -->
+    <section id="services" class="portfolio">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -323,12 +323,42 @@
           <div class=" portfolio-item filter-metal">
             <h1>Metal Stamping</h1>
             <section class="about">
+                <div class="container aos-init aos-animate" data-aos="fade-up">
+                <div class="row">
+
+                  <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                    <p>For over 5 years, Hana Master Jaya have done custom manufacturing in steel, aluminum, copper, and other metals. Our years of experience and tool capabilities are put to work to make your job easier. Hana Master assures the customers with reliability and quality.</p>
+                  </div>
+
+                  <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                    
+                  </div>
+                 </div>
                
+                </div>    
+            </section>
           </div>
+     
 
           <div class=" portfolio-item filter-wire">
             <h1>Wire Harness</h1>
-            <section  class="about">
+            <section class="about">
+                <div class="container aos-init aos-animate" data-aos="fade-up">
+                <div class="row">
+
+                  <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                    <p>Hana Master Jaya provides complete solutions including prototyping, validation and manufacturing of wiring harnesses for electrical and electronic equipment.</p>
+                    <br>
+                    <p>The complete vertical integration for manufacturing critical wiring harness components like wires, connectors, terminals, grommets, junction boxes, relay boxes, protectors etc., enables Hana Master Jaya to provide quality products with reduced time to market. The capability of designing and manufacturing of jigs, fixtures, applicators, circuit checking & assembly boards, supported by high quality facilities for wiring harness & component testing, makes the company a full system solutions provider.</p>
+                  </div>
+
+                  <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                    
+                  </div>
+                 </div>
+               
+                </div>    
+            </section>
                
           </div>
 
