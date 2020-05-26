@@ -245,12 +245,12 @@
 				</div>
 				<div class="row portfolio-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
 					<div class=" portfolio-item filter-smt">
-						<h1>SMT (Surface Mount Technology)</h1>
+						<h1>
+							SMT (Surface Mount Technology)
+						</h1>
 						<section  class="about">
 							<div class="container aos-init aos-animate" data-aos="fade-up">
-
 								<div class="row">
-
 									<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
 										<p class="font-italic">
 											State-of-the-art equipment for SMT.
