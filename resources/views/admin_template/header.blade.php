@@ -13,7 +13,10 @@
     <link href="/assets/admin/css/plugins/footable/footable.core.css" rel="stylesheet">
     <link href="/assets/admin/css/animate.css" rel="stylesheet">
     <link href="/assets/admin/css/style.css" rel="stylesheet">
-    <script src="/assets/admin/js/jquery-3.1.1.min.js"></script>
+    <script src="/assets/admin/js/jquery-3.5.1.min.js"></script>
+    <link href="/assets/admin/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+    <link href="/assets/admin/summernote/summernote.min.css" rel="stylesheet">
+    
 
     <link href="/assets/admin/css/plugins/dataTables/datatables.min.css" rel="stylesheet">
     

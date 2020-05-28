@@ -33,7 +33,6 @@ class AdminController extends Controller
         else{
             $email = $request->email;
             $password = $request->password;
-            $data = Admin::where('email',$email)->first();
             if(Auth::attempt(['email' => $email, 'password' => $password])){
                 return redirect('/admin/dashboard');
             }

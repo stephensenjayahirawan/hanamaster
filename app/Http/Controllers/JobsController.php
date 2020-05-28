@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Jobs;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Auth;
 
 class JobsController extends Controller
 {
@@ -14,7 +16,13 @@ class JobsController extends Controller
      */
     public function index()
     {
-        //
+        if (Auth::user()){
+            $jobs = Jobs::where('is_deleted',0)->get();
+            return view('admin/job_vacancy',compact('jobs'));
+        }
+        else{
+            return redirect('/admin');
+        }
     }
 
     /**
@@ -24,7 +32,12 @@ class JobsController extends Controller
      */
     public function create()
     {
-        //
+        if (Auth::user()){
+            return view('admin/job_vacancy_add');
+        }
+        else{
+            return redirect('/admin');
+        }
     }
 
     /**

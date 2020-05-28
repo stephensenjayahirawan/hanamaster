@@ -19,4 +19,8 @@ Route::group(['prefix'=>'admin','as'=>'admin'], function () {
     Route::get('/dashboard', ['as' => 'dashboard_admin', 'uses' => 'AdminController@dashboard']);
     Route::post('/login', ['as' => 'post_login', 'uses' => 'AdminController@login']);
     Route::get('/logout', ['as' => 'logout', 'uses' => 'AdminController@logout']);
+    Route::group(['prefix'=>'/job_vacancy','as'=>'admin/job_vacancy'], function () {
+        Route::get('/', ['as' => 'job_vacancy', 'uses' => 'JobsController@index']);
+        Route::get('/add', ['as' => 'job_vacancy_add', 'uses' => 'JobsController@create']);
+    });
 });
