@@ -16,7 +16,8 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Data Admin</span></a>
+                    <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
+                    <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Job Vacancy</span></a>
                 </li>
         </div>
     </nav>

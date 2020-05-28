@@ -1,22 +1,16 @@
-<?php
-//if($this->session->flashdata('success_message')){
-	?>
+@if(\Session::has('alert-success'))
 	<div class="row">
         <div class="alert alert-success alert-dismissable">
             <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
-                    <?php //echo $this->session->flashdata('success_message');?>
+                {{Session::get('alert-success')}}
         </div>
     </div>
-	<?php
-//}
-//else if($this->session->flashdata('error_message')){
-	?>
+@endif
+@if(\Session::has('alert'))
 	<div class="row">
         <div class="alert alert-danger alert-dismissable">
             <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
-                    <?php //echo $this->session->flashdata('error_message');?>
+                {{Session::get('alert')}}
         </div>
     </div>
-	<?php
-//}
-?>
+ @endif

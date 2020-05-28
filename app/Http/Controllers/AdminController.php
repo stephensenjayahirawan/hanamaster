@@ -6,32 +6,60 @@ use Illuminate\Http\Request;
 use App\Admin;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
+    protected $guard = 'admin';
+    protected $redirectTo = '/admin';
+
     //Show Login Page
     public function index(){
-        return view('admin/login');
-    }
-
-    public function login(Request $request){
-        $email = $request->email;
-        $password = $request->password;
-        $data = Admin::where('email',$email)->first();
-        if($data){
-            if(Hash::check($password,$data->password)){
-                Session::put('name',$data->name);
-                Session::put('email',$data->email);
-                Session::put('login',TRUE);
-                echo "sukses";
-            }
-            else{
-                return redirect('/admin')->with('alert','Invalid Password!');
-            }
+        if (Auth::user()){
+            return redirect('/admin/dashboard');
         }
         else{
-            return redirect('/admin')->with('alert','Invalid Email!');
+            return view('admin/login');
         }
+        
+    }
+
+    //process login input from user
+    //redirect to dashboard if email and password are valid
+    public function login(Request $request){
+        if (Auth::user()){
+            return redirect('/admin/dashboard');
+        }
+        else{
+            $email = $request->email;
+            $password = $request->password;
+            $data = Admin::where('email',$email)->first();
+            if(Auth::attempt(['email' => $email, 'password' => $password])){
+                return redirect('/admin/dashboard');
+            }
+            else{
+                return redirect('/admin')->with('alert','Invalid Email or Password!');
+            }
+        }
+    }
+
+    //Show admin dashboard page
+    //User will redirect to login page if not authenticated yet.
+    public function dashboard(){
+        if (Auth::user()){
+           return view('admin/dashboard');
+        }
+        else{
+            return redirect('/admin');
+        }
+    }
+
+    //Process users logout
+    public function logout(){
+        if(Auth::user()){
+            Auth::logout();
+        }
+        return redirect('/admin');
     }
 
     public function addAdmin(){

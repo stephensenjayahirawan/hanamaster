@@ -7,10 +7,10 @@
         </div>
             <ul class="nav navbar-top-links navbar-right">
                 <li>
-                    <span class="m-r-lg welcome-message"><span style="font-weight: bold;">You're logged in as :</span></span>
+                    <span class="m-r-lg welcome-message"><span style="font-weight: bold;">You're logged in as : {{Auth::user()->name}}</span></span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="/admin/logout">
                         <i class="fa fa-sign-out"></i> Log out
                     </a>
                 </li>
