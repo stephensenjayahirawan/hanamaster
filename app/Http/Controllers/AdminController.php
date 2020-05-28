@@ -60,12 +60,4 @@ class AdminController extends Controller
         }
         return redirect('/admin');
     }
-
-    public function addAdmin(){
-        $data =  new Admin();
-        $data->name = "Hengky";
-        $data->email = "hengky@gmail2.com";
-        $data->password = bcrypt("123");
-        $data->save();
-    }
 }
