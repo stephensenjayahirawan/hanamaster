@@ -122,8 +122,16 @@ class JobsController extends Controller
      * @param  \App\Jobs  $jobs
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Jobs $jobs)
+    public function destroy($id)
     {
-        //
+        $job = Jobs::where('id', $id)->first();
+        $job = Jobs::where('id', $id)
+                 ->update(['is_deleted' => 1]);
+        if($job){
+            return redirect('/admin/job_vacancy')->with('alert-success','Successfully deleted job vacancy!');
+        }
+        else{
+            // return redirect('/admin/job_vacancy')
+        }
     }
 }
