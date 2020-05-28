@@ -25,5 +25,7 @@ Route::group(['prefix'=>'admin','as'=>'admin'], function () {
         Route::post('/store', ['as' => 'job_vacancy_store', 'uses' => 'JobsController@store']);
         Route::get('/show/{id}', ['as' => 'job_vacancy_show', 'uses' => 'JobsController@show']);
         Route::get('/delete/{id}', ['as' => 'job_vacancy_delete', 'uses' => 'JobsController@destroy']);
+        Route::get('/edit/{id}', ['as' => 'job_vacancy_edit', 'uses' => 'JobsController@edit']);
+        Route::post('/post_edit', ['as' => 'job_vacancy_post_edit', 'uses' => 'JobsController@postEdit']);
     });
 });

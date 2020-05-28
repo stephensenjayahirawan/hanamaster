@@ -42,8 +42,8 @@
                                         <td>{{$job->created_at}}</td>
                                         <td>
                                             <a href="/admin/job_vacancy/show/{{$job->id}}" class="btn btn-sm btn-success"><i class="fa fa-eye"></i></a>
-                                            <button type="button" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></button>
-                                            <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete_job"><i class="fa fa-trash"></i></button>
+                                            <a href="/admin/job_vacancy/edit/{{$job->id}}" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
+                                            <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete_job".$index><i class="fa fa-trash"></i></button>
                                             @include("section.delete_job")
                                            
                                         </td>

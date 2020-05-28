@@ -96,12 +96,52 @@ class JobsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Jobs  $jobs
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function edit(Jobs $jobs)
+    public function edit($id)
     {
-        //
+        $job = Jobs::where('id', $id)->first();
+        if($job){
+            return view('admin/job_vacancy_edit',compact('job'));
+        }
+        else{
+            // return redirect('/admin/job_vacancy')->with('alert','Cant find Job Vacancy ID!');
+        }
+    }
+
+    /**
+     * Post edit job vacancy
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function postEdit(Request $request)
+    {
+        date_default_timezone_set('Asia/Jakarta');
+        $validatedData = $request->validate([
+            'job_title' => 'required',
+            'last_registration_date' => 'required',
+            'content' => 'required',
+        ]);
+        $last_registration_unix = strtotime($request->input('last_registration_date'));
+        $today_unix = time();
+
+        if($last_registration_unix < $today_unix){
+            return redirect('/admin/job_vacancy/edit/'.$request->input('jobId'))->with('alert','Last Registration Date must be greater than today!')->withInput($request->input());
+        }
+ 
+        $job = Jobs::where('id', $request->input('jobId'))
+                        ->update(['title' => $request->input('job_title'),
+                                  'valid_to' => date("Y-m-d", strtotime($request->input('last_registration_date')) ),
+                                  'content' => $request->input('content')]
+                                );
+        if($job){
+            return redirect('/admin/job_vacancy')->with('alert-success','Successfully edit job vacancy!');
+        }
+        else{
+            return redirect('/admin/job_vacancy/edit/'.$request->input('jobId'))->with('alert','Failed to edit job vacancy!');
+        }
     }
 
     /**
