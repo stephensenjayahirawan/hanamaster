@@ -17,7 +17,7 @@ class JobsController extends Controller
     public function index()
     {
         if (Auth::user()){
-            $jobs = Jobs::where('is_deleted',0)->get();
+            $jobs = Jobs::where('is_deleted',0)->orderBy('valid_to', 'DESC')->get();
             return view('admin/job_vacancy',compact('jobs'));
         }
         else{
@@ -48,7 +48,31 @@ class JobsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        date_default_timezone_set('Asia/Jakarta');
+        $validatedData = $request->validate([
+            'job_title' => 'required',
+            'last_registration_date' => 'required',
+            'content' => 'required',
+        ]);
+
+        $last_registration_unix = strtotime($request->input('last_registration_date'));
+        $today_unix = time();
+        if($last_registration_unix < $today_unix){
+            return redirect('/admin/job_vacancy/add')->with('alert','Last Registration Date must be greater than today!')->withInput($request->input());
+        }
+        $job = new Jobs();
+        $job->title = $request->input('job_title');
+        $job->content = $request->input('content');
+        $job->valid_to = date("Y-m-d", strtotime($request->input('last_registration_date')) );
+        $job->is_deleted = 0;
+        $job->valid_from = date('Y-m-d');
+        $job->added_by = Auth::user()->id;
+        if($job->save()){
+            return redirect('/admin/job_vacancy')->with('alert-success','Successfully add new job vacancy!');
+        }
+        else{
+            return redirect('/admin/job_vacancy/add')->with('alert','Failed add new job vacancy!');
+        }
     }
 
     /**
@@ -57,9 +81,16 @@ class JobsController extends Controller
      * @param  \App\Jobs  $jobs
      * @return \Illuminate\Http\Response
      */
-    public function show(Jobs $jobs)
+    public function show($id)
     {
-        //
+        
+        $job = Jobs::where('id', $id)->first();
+        if($job){
+            return view('admin/job_vacancy_show',compact('job'));
+        }
+        else{
+            // return redirect('/admin/job_vacancy')->with('alert','Cant find Job Vacancy ID!');
+        }
     }
 
     /**

@@ -22,5 +22,7 @@ Route::group(['prefix'=>'admin','as'=>'admin'], function () {
     Route::group(['prefix'=>'/job_vacancy','as'=>'admin/job_vacancy'], function () {
         Route::get('/', ['as' => 'job_vacancy', 'uses' => 'JobsController@index']);
         Route::get('/add', ['as' => 'job_vacancy_add', 'uses' => 'JobsController@create']);
+        Route::post('/store', ['as' => 'job_vacancy_store', 'uses' => 'JobsController@store']);
+        Route::get('/show/{id}', ['as' => 'job_vacancy_show', 'uses' => 'JobsController@show']);
     });
 });

@@ -11,29 +11,29 @@
                         <h5>Add New Job Vacancy</h5>
                     </div>
                     <div class="ibox-content">
-                        <form method="post" action="{{ url('/admin/job_vacancy/createPost') }}">
+                        <form method="post" action="{{ url('/admin/job_vacancy/store') }}">
                             @csrf
                             <div class="form-group  row">
                                 <label class="col-sm-2 col-form-label">Job Title : <span style="color:red;">*</span></label>
                                 <div class="col-sm-10">
-                                    <input placeholder="Ex : Sales&Marketing, IT Technology, etc" type="text" name="job_title" required class="form-control">
+                                    <input placeholder="Ex : Sales&Marketing, IT Technology, etc" type="text" name="job_title" value="{{ old('job_title') }}" required class="form-control">
                                 </div>
                             </div>
                             <div class="form-group row" id="data_1">
                                 <label class="col-sm-2 col-form-label">Last Registration Date : <span style="color:red;">*</span></label>
                                 <div class="col-sm-10 input-group date">
-                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" value="{{ old('last_registration_date') }}" name="last_registration_date" class="form-control" placeholder="mm/dd/yyyy">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Content : <span style="color:red;">*</span></label>
                                 <div class="col-sm-10">
-                                    <textarea id="content" class="form-control" name="konten" rows="10" cols="50"></textarea>
+                                    <textarea id="content" class="form-control" name="content" rows="10" cols="50">{{ old('content') }}</textarea>
                                 </div>
                             </div>
                             <div class="form-group row text-center">
-                                <a href="/admin/job_vacancy" style="float:left;" class="btn btn-md btn-danger ">Cancel</a>
-                                <button type="submit" class="btn btn-md btn-primary ">Add Job Vacancy</button>
+                                <a href="/admin/job_vacancy" style="float:left;" class="btn btn-md btn-danger "><i class="fa fa-times"></i> Cancel</a>
+                                <button type="submit" class="btn btn-md btn-primary "><i class="fa fa-check"></i> Add Job Vacancy</button>
                             </div>
                         </form>
                     </div>

@@ -18,9 +18,9 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Job Name</th>
-                                        <th>Created At</th>
                                         <th>Validity</th>
                                         <th>Status</th>
+                                        <th>Created At</th>
                                         <th>Action</th>
                                     </tr>
                                 </thed>
@@ -28,12 +28,23 @@
                                     @if (count($jobs) > 0)
                                     @foreach($jobs as $index => $job)
                                     <tr>
-                                        <td>{{$index}}</td>
+                                        <td>{{$index+=1}}</td>
                                         <td>{{$job->title}}</td>
-                                        <td>{{$job->title}}</td>
-                                        <td>{{$job->title}}</td>
-                                        <td>{{$job->title}}</td>
-                                        <td>{{$job->title}}</td>
+                                        <td>{{$job->valid_from}} s/d {{$job->valid_to}}</td>
+                                        <td>
+                                            @if (Carbon\Carbon::now() < $job->valid_to)
+                                            <span class="badge badge-primary">Active</span>
+                                            @endif
+                                            @if (Carbon\Carbon::now() > $job->valid_to)
+                                            <span class="badge badge-danger">Expired</span>
+                                            @endif
+                                        </td>
+                                        <td>{{$job->created_at}}</td>
+                                        <td>
+                                            <a href="/admin/job_vacancy/show/{{$job->id}}" class="btn btn-sm btn-success"><i class="fa fa-eye"></i></a>
+                                            <button type="button" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
+                                        </td>
                                     </tr>
                                     @endforeach 
                                     @endif
