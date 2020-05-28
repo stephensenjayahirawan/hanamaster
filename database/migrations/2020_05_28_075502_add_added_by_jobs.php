@@ -14,7 +14,7 @@ class AddAddedByJobs extends Migration
     public function up()
     {
         Schema::table('jobs', function (Blueprint $table) {
-            $table->BigInteger('added_by');
+            $table->unsignedBigInteger('added_by');
             $table->foreign('added_by')->references('id')->on('users');
         });
     }
