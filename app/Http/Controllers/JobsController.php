@@ -90,11 +90,11 @@ class JobsController extends Controller
     {
         if (Auth::user()){
             $job = Jobs::where([['id', $id], ['is_deleted', 0]])->first();
-            if($job){
+            if($job->count()){
                 return view('admin/job_vacancy_show',compact('job'));
             }
             else{
-                // return redirect('/admin/job_vacancy')->with('alert','Cant find Job Vacancy ID!');
+                return redirect('/admin/job_vacancy')->with('alert','Cant find Job Vacancy ID!');
             }
         }
         else{
@@ -112,11 +112,11 @@ class JobsController extends Controller
     {
         if (Auth::user()){
             $job = Jobs::where([['id', $id], ['is_deleted', 0]])->first();
-            if($job){
+            if($job->count()){
                 return view('admin/job_vacancy_edit',compact('job'));
             }
             else{
-                // return redirect('/admin/job_vacancy')->with('alert','Cant find Job Vacancy ID!');
+                return redirect('/admin/job_vacancy')->with('alert','Cant find Job Vacancy ID!');
             }
         }
         else{

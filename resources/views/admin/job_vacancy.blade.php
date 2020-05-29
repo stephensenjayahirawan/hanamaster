@@ -12,6 +12,7 @@
                     </div>
                     <div class="ibox-content">
                         <a href="/admin/job_vacancy/add" class="btn btn-md btn-primary">Add New Job Vacancy</a>
+                        <hr>
                         <div class="table-responsive">
                             <table class="table table-striped table-bordered table-hover dataTables-example" >
                                 <thead>
@@ -56,6 +57,8 @@
                                     </tr>
                                     @endif
                                 </tbody>
+                                <tfoot>
+                                </tfoot>
                             </table>
                         </div>
                     </div>

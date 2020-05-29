@@ -22,7 +22,7 @@
 	<!-- Page-Level Scripts -->
 	<script src="/assets/admin/ckeditor/ckeditor.js"></script>
 	<script>
-		let ck_content = document.getElementById("content");
+		let ck_editor_content = document.getElementById("content");
 			CKEDITOR.replace(content,{
 			language:'en-gb'
 		});
@@ -33,8 +33,8 @@
             $('.dataTables-example').DataTable({
                 pageLength: 25,
                 responsive: true,
-                dom: '<"html5buttons"B>lTfgitp'
-
+                dom: '<"html5buttons"B>lTfgitp',
+				buttons: []
             });
 
         });
