@@ -6,8 +6,7 @@
                 <li class="nav-header">
                     <div class="dropdown profile-element"> <span>
                             <div align="center">
-                                <img alt="image" style="width: 50px; height: 50px;" class="img-circle" src="/assets/img/.png" />
-                                <h4 style="color: white;">HanaMaster</h4>
+                                <img alt="image"  src="/assets/img/logo.png" />
                             </div>
                             </span>
                     </div>
