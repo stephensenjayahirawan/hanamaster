@@ -48,30 +48,35 @@ class JobsController extends Controller
      */
     public function store(Request $request)
     {
-        date_default_timezone_set('Asia/Jakarta');
-        $validatedData = $request->validate([
-            'job_title' => 'required',
-            'last_registration_date' => 'required',
-            'content' => 'required',
-        ]);
+        if (Auth::user()){
+            date_default_timezone_set('Asia/Jakarta');
+            $validatedData = $request->validate([
+                'job_title' => 'required',
+                'last_registration_date' => 'required',
+                'content' => 'required',
+            ]);
 
-        $last_registration_unix = strtotime($request->input('last_registration_date'));
-        $today_unix = time();
-        if($last_registration_unix < $today_unix){
-            return redirect('/admin/job_vacancy/add')->with('alert','Last Registration Date must be greater than today!')->withInput($request->input());
-        }
-        $job = new Jobs();
-        $job->title = $request->input('job_title');
-        $job->content = $request->input('content');
-        $job->valid_to = date("Y-m-d", strtotime($request->input('last_registration_date')) );
-        $job->is_deleted = 0;
-        $job->valid_from = date('Y-m-d');
-        $job->added_by = Auth::user()->id;
-        if($job->save()){
-            return redirect('/admin/job_vacancy')->with('alert-success','Successfully add new job vacancy!');
+            $last_registration_unix = strtotime($request->input('last_registration_date'));
+            $today_unix = time();
+            if($last_registration_unix < $today_unix){
+                return redirect('/admin/job_vacancy/add')->with('alert','Last Registration Date must be greater than today!')->withInput($request->input());
+            }
+            $job = new Jobs();
+            $job->title = $request->input('job_title');
+            $job->content = $request->input('content');
+            $job->valid_to = date("Y-m-d", strtotime($request->input('last_registration_date')) );
+            $job->is_deleted = 0;
+            $job->valid_from = date('Y-m-d');
+            $job->added_by = Auth::user()->id;
+            if($job->save()){
+                return redirect('/admin/job_vacancy')->with('alert-success','Successfully add new job vacancy!');
+            }
+            else{
+                return redirect('/admin/job_vacancy/add')->with('alert','Failed add new job vacancy!');
+            }
         }
         else{
-            return redirect('/admin/job_vacancy/add')->with('alert','Failed add new job vacancy!');
+            return redirect('/admin');
         }
     }
 
@@ -83,13 +88,17 @@ class JobsController extends Controller
      */
     public function show($id)
     {
-        
-        $job = Jobs::where('id', $id)->first();
-        if($job){
-            return view('admin/job_vacancy_show',compact('job'));
+        if (Auth::user()){
+            $job = Jobs::where([['id', $id], ['is_deleted', 0]])->first();
+            if($job){
+                return view('admin/job_vacancy_show',compact('job'));
+            }
+            else{
+                // return redirect('/admin/job_vacancy')->with('alert','Cant find Job Vacancy ID!');
+            }
         }
         else{
-            // return redirect('/admin/job_vacancy')->with('alert','Cant find Job Vacancy ID!');
+            return redirect('/admin');
         }
     }
 
@@ -101,12 +110,17 @@ class JobsController extends Controller
      */
     public function edit($id)
     {
-        $job = Jobs::where('id', $id)->first();
-        if($job){
-            return view('admin/job_vacancy_edit',compact('job'));
+        if (Auth::user()){
+            $job = Jobs::where([['id', $id], ['is_deleted', 0]])->first();
+            if($job){
+                return view('admin/job_vacancy_edit',compact('job'));
+            }
+            else{
+                // return redirect('/admin/job_vacancy')->with('alert','Cant find Job Vacancy ID!');
+            }
         }
         else{
-            // return redirect('/admin/job_vacancy')->with('alert','Cant find Job Vacancy ID!');
+            return redirect('/admin');
         }
     }
 
@@ -118,29 +132,33 @@ class JobsController extends Controller
      */
     public function postEdit(Request $request)
     {
-        date_default_timezone_set('Asia/Jakarta');
-        $validatedData = $request->validate([
-            'job_title' => 'required',
-            'last_registration_date' => 'required',
-            'content' => 'required',
-        ]);
-        $last_registration_unix = strtotime($request->input('last_registration_date'));
-        $today_unix = time();
+        if (Auth::user()){
+            date_default_timezone_set('Asia/Jakarta');
+            $validatedData = $request->validate([
+                'job_title' => 'required',
+                'last_registration_date' => 'required',
+                'content' => 'required',
+            ]);
+            $last_registration_unix = strtotime($request->input('last_registration_date'));
+            $today_unix = time();
 
-        if($last_registration_unix < $today_unix){
-            return redirect('/admin/job_vacancy/edit/'.$request->input('jobId'))->with('alert','Last Registration Date must be greater than today!')->withInput($request->input());
-        }
- 
-        $job = Jobs::where('id', $request->input('jobId'))
-                        ->update(['title' => $request->input('job_title'),
-                                  'valid_to' => date("Y-m-d", strtotime($request->input('last_registration_date')) ),
-                                  'content' => $request->input('content')]
-                                );
-        if($job){
-            return redirect('/admin/job_vacancy')->with('alert-success','Successfully edit job vacancy!');
+            if($last_registration_unix < $today_unix){
+                return redirect('/admin/job_vacancy/edit/'.$request->input('jobId'))->with('alert','Last Registration Date must be greater than today!')->withInput($request->input());
+            }
+            $job = Jobs::where([['id', $request->input('jobId')], ['is_deleted', 0]])
+                            ->update(['title' => $request->input('job_title'),
+                                    'valid_to' => date("Y-m-d", strtotime($request->input('last_registration_date')) ),
+                                    'content' => $request->input('content')]
+                                    );
+            if($job){
+                return redirect('/admin/job_vacancy')->with('alert-success','Successfully edit job vacancy!');
+            }
+            else{
+                return redirect('/admin/job_vacancy/edit/'.$request->input('jobId'))->with('alert','Failed to edit job vacancy!');
+            }
         }
         else{
-            return redirect('/admin/job_vacancy/edit/'.$request->input('jobId'))->with('alert','Failed to edit job vacancy!');
+            return redirect('/admin');
         }
     }
 
@@ -164,14 +182,20 @@ class JobsController extends Controller
      */
     public function destroy($id)
     {
-        $job = Jobs::where('id', $id)->first();
-        $job = Jobs::where('id', $id)
-                 ->update(['is_deleted' => 1]);
-        if($job){
-            return redirect('/admin/job_vacancy')->with('alert-success','Successfully deleted job vacancy!');
+        if (Auth::user()){
+            $job = Jobs::where('id', $id)->first();
+            $job = Jobs::where('id', $id)
+                    ->update(['is_deleted' => 1]);
+            if($job){
+                return redirect('/admin/job_vacancy')->with('alert-success','Successfully deleted job vacancy!');
+            }
+            else{
+                // return redirect('/admin/job_vacancy')
+            }
         }
         else{
-            // return redirect('/admin/job_vacancy')
+            return redirect('/admin');
         }
+        
     }
 }
