@@ -27,7 +27,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <h4><span style="font-weight:bold;">Created At</span> : {{$job->created_at}}</h4>
-                                    <h4><span style="font-weight:bold;">Updated At</span> : {{$job->update_at}}</h4>
+                                    <h4><span style="font-weight:bold;">Last Update</span> : {{$job->updated_at}}</h4>
                                     
                                 </div>
                             </div>
