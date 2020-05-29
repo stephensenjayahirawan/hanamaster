@@ -33,7 +33,7 @@
                                         <td>{{$job->title}}</td>
                                         <td>{{$job->valid_from}} s/d {{$job->valid_to}}</td>
                                         <td>
-                                            @if (Carbon\Carbon::now() < $job->valid_to)
+                                            @if (Carbon\Carbon::now() <= $job->valid_to)
                                             <span class="badge badge-primary">Active</span>
                                             @endif
                                             @if (Carbon\Carbon::now() > $job->valid_to)

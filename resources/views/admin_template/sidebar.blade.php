@@ -15,8 +15,10 @@
                         HM
                     </div>
                 </li>
-                <li>
-                    <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
+                <li {{ $dashboard ?? '' }}>
+                    <a href="/admin/dashboard"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
+                </li>
+                <li {{ $job_vacancy ?? '' }}>
                     <a href="/admin/job_vacancy"><i class="fa fa-briefcase"></i> <span class="nav-label">Job Vacancy</span></a>
                 </li>
         </div>

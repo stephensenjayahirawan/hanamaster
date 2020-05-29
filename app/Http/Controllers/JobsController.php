@@ -17,8 +17,10 @@ class JobsController extends Controller
     public function index()
     {
         if (Auth::user()){
+            $job_vacancy = 'class=active';
+            $title = "Job Vacancy List - Hana Master Admin";
             $jobs = Jobs::where('is_deleted',0)->orderBy('valid_to', 'DESC')->get();
-            return view('admin/job_vacancy',compact('jobs'));
+            return view('admin/job_vacancy',compact(array('jobs', 'title', 'job_vacancy')));
         }
         else{
             return redirect('/admin');
@@ -33,7 +35,9 @@ class JobsController extends Controller
     public function create()
     {
         if (Auth::user()){
-            return view('admin/job_vacancy_add');
+            $title = "Add New Job Vacancy - Hana Master Admin";
+            $job_vacancy = 'class=active';
+            return view('admin/job_vacancy_add', compact(array('title', 'job_vacancy')));
         }
         else{
             return redirect('/admin');
@@ -89,9 +93,11 @@ class JobsController extends Controller
     public function show($id)
     {
         if (Auth::user()){
+            $job_vacancy = 'class=active';
+            $title = "Job Vacancy Detail - Hana Master Admin";
             $job = Jobs::where([['id', $id], ['is_deleted', 0]])->first();
             if($job->count()){
-                return view('admin/job_vacancy_show',compact('job'));
+                return view('admin/job_vacancy_show',compact(array('job', 'title', 'job_vacancy')));
             }
             else{
                 return redirect('/admin/job_vacancy')->with('alert','Cant find Job Vacancy ID!');
@@ -111,9 +117,11 @@ class JobsController extends Controller
     public function edit($id)
     {
         if (Auth::user()){
+            $title = "Edit Job Vacancy - Hana Master Admin";
+            $job_vacancy = 'class=active';
             $job = Jobs::where([['id', $id], ['is_deleted', 0]])->first();
             if($job->count()){
-                return view('admin/job_vacancy_edit',compact('job'));
+                return view('admin/job_vacancy_edit',compact(array('job', 'title', 'job_vacancy')));
             }
             else{
                 return redirect('/admin/job_vacancy')->with('alert','Cant find Job Vacancy ID!');

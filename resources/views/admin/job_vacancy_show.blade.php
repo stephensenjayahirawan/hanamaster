@@ -17,7 +17,7 @@
                                     <h4><span style="font-weight:bold;">Job Name</span> : {{$job->title}}</h4>
                                     <h4><span style="font-weight:bold;">Validity</span> : {{$job->valid_from}} s/d  {{$job->valid_to}}</h4>
                                     <h4><span style="font-weight:bold;">Status</span> :
-                                        @if (Carbon\Carbon::now() < $job->valid_to)
+                                        @if (Carbon\Carbon::now() <= $job->valid_to)
                                         <span class="badge badge-primary">Active</span>
                                         @endif
                                         @if (Carbon\Carbon::now() > $job->valid_to)
