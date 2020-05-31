@@ -42,11 +42,12 @@ class HomeController extends Controller
 		$validatedData = $request->validate([
 			'name' => 'required',
 			'email' => 'email|required',
-			'phone' => 'required',
+			'phone' => 'required|phone:ID',
 			'uploaded_file' => 'required',
     		'captcha' => 'required|captcha'
 		],
-		['captcha.captcha'=>'Invalid captcha code.']);
+		['captcha.captcha'=>'Invalid captcha code.',
+		'phone.phone'=>'Invalid phone number format.'],);
 
 		$file = $request->file('uploaded_file');
 	 

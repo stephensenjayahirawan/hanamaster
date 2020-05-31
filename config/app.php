@@ -175,7 +175,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Mews\Captcha\CaptchaServiceProvider::class,
-
+        Propaganistas\LaravelPhone\PhoneServiceProvider::class,
     ],
 
     /*
