@@ -38,14 +38,7 @@ class HomeController extends Controller
 	}
 	public function apply(Request $request)
 	{
-		// $validatedData =  Validator::make($request->all(), [
-		// 	'name' => 'email|required',
-		// 	'email' => 'email|required',
-		// 	'phone' => 'required',
-		// 	'uploaded_file' => 'required',
-  //   		'captcha' => 'required|captcha'
-		// ],
-		// ['captcha.captcha'=>'Invalid captcha code.']);
+
 		$validatedData = $request->validate([
 			'name' => 'required',
 			'email' => 'email|required',
@@ -59,7 +52,6 @@ class HomeController extends Controller
 	 
 		$nama_file = time()."_".$file->getClientOriginalName();
 	 
-	      	// isi dengan nama folder tempat kemana file diupload
 		$tujuan_upload = 'data_file';
 		$file->move($tujuan_upload,$nama_file);
 	 
