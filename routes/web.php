@@ -29,3 +29,9 @@ Route::group(['prefix'=>'admin','as'=>'admin'], function () {
         Route::post('/post_edit', ['as' => 'job_vacancy_post_edit', 'uses' => 'JobsController@postEdit']);
     });
 });
+
+Route::get('/send-email-html','HomeController@send_email');
+Route::post('/apply-job','HomeController@apply');
+Route::get('my-captcha', 'HomeController@myCaptcha')->name('myCaptcha');
+Route::post('my-captcha', 'HomeController@myCaptchaPost')->name('myCaptcha.post');
+Route::get('refresh_captcha', 'HomeController@refreshCaptcha')->name('refresh_captcha');

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,6 +25,7 @@
 	<link href="/assets/vendor/venobox/venobox.css" rel="stylesheet">
 	<link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
 	<link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/assets/admin/font-awesome/css/font-awesome.css" rel="stylesheet">
 
 	<!-- Template Main CSS File -->
 	<link href="/assets/css/style.css" rel="stylesheet">
@@ -347,6 +349,8 @@
 			</div>
 		</section><!-- End Testimonials Section -->
 
+		@include("section.careers")
+
 		<!-- ======= Team Section ======= -->
 		@include("section.contact_us")
 
@@ -437,3 +441,33 @@
 </body>
 
 </html>
+
+
+<div class="modal fade" id="errorMessageModal" tabindex="-1" role="dialog" aria-labelledby="errorMessageModal" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Error Message</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div id="error_message">
+					@if ($errors->any())
+				        <ul>
+				            @foreach ($errors->all() as $error)
+				                <li>{{ $error }}</li>
+				            @endforeach
+				        </ul>
+					    <input type="hidden" id="isError" name="isError" value="X">
+					@endif
+				</div>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>

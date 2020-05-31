@@ -219,3 +219,32 @@
   aos_init();
 
 })(jQuery);
+$(document).ready(function() {
+  if ($('#isError').length != '0') {
+    $('#errorMessageModal').modal('show');
+  }
+  $('#validatedCustomFile').change(function(event) {
+    if (this.files[0].size/1024 > 200) {
+      alert("File yang anda upload sebesar "+this.files[0].size/1024 + " KB");
+      $('#validatedCustomFile').val('');
+    }else {
+      $('#file-label'). html(this.files[0].name)
+    }
+  });
+  $('#show_modal').click(function(event) {
+    $('#job_id').val($(this).attr('job_id'));
+    $('#job_title').val($(this).attr('job_title'));
+    $('#jobname').html($(this).attr('job_title'));
+
+  });
+
+  $('#refresh').click(function(){
+    $.ajax({
+       type:'GET',
+       url:'refresh_captcha',
+       success:function(data){
+          $(".captcha span").html(data.captcha);
+       }
+    });
+  });
+});
