@@ -38,7 +38,19 @@ class HomeController extends Controller
 	}
 	public function apply(Request $request)
 	{
-
+		if(substr($request->input('phone'),0,3) == '+62'){
+			$phone_number = substr($request->input('phone'),1);
+		}
+		else if (substr($request->input('phone'),0,2) == '62'){
+			$phone_number = $request->input('phone');
+		}
+		else if(substr($request->input('phone'),0,1) == '0'){
+			$phone_number = '62'.substr($request->input('phone'),1);
+		}
+		else{
+			$phone_number = '62'.$request->input('phone');
+		}
+		$request->merge(['phone' => $phone_number]);
 		$validatedData = $request->validate([
 			'name' => 'required',
 			'email' => 'email|required',

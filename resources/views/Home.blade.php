@@ -29,6 +29,7 @@
 
 	<!-- Template Main CSS File -->
 	<link href="/assets/css/style.css" rel="stylesheet">
+	<link href="/assets/css/custom.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Gp - v2.0.0
@@ -438,6 +439,7 @@
 
 	<!-- Template Main JS File -->
 	<script src="/assets/js/main.js"></script>
+	<script src="/assets/js/custom.js"></script>
 </body>
 
 </html>

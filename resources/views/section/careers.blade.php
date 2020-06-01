@@ -9,20 +9,23 @@
 		<h4>
 			We are one Indonesian and big electronic manufacture company, is looking for candidates for the following positions:
 		</h4>
-		@foreach ($jobs as $job)
-		<div class="card">
-			<div class="card-body">
-				<div class="text-center">
-					<h3 class="card-title">{{ $job->title }}</h3>
-					<span  class="card-title">Posted on {{ date_format(date_create($job->valid_from),'d M Y') }}</span>
-				</div>
-				<p class="card-text">
-					{!! $job->content !!}
-				</p>
-				<hr>
-				<h5 class="card-title">Applied before {{ date_format(date_create($job->valid_to), 'd M Y') }}</h5>
-				<div class="text-right">
-					<button id="show_modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyModal" job_id="{{ $job->id }}" job_title="{{ $job->title }}" data-whatever="@getbootstrap">Apply Now</button>
+		@foreach ($jobs as $index => $job)
+		<button class="accordion-job_vacancy">{{$index+=1}}. {{ $job->title }}</button>
+		<div class="panel-job_vacancy">
+			<div class="card">
+				<div class="card-body">
+					<div class="text-center">
+						<h3 class="card-title">{{ $job->title }}</h3>
+						<span  class="card-title">Posted on {{ date_format(date_create($job->valid_from),'d M Y') }}</span>
+					</div>
+					<p class="card-text">
+						{!! $job->content !!}
+					</p>
+					<hr>
+					<h5 class="card-title">Apply before {{ date_format(date_create($job->valid_to), 'd M Y') }}</h5>
+					<div class="text-right">
+						<button id="show_modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyModal" job_id="{{ $job->id }}" job_title="{{ $job->title }}" data-whatever="@getbootstrap">Apply Now</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -32,28 +35,28 @@
 </section>
 
 <div class="modal fade" id="applyModal" tabindex="-1" role="dialog" aria-labelledby="applyModal" aria-hidden="true">
-	<div class="modal-dialog modal-lg" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Apply For <span id="jobname"></span></h5>
+	<div class="modal-dialog modal-lg modal-notify modal-info" role="document">
+		<div class="modal-content text-center">
+			<div class="modal-header d-flex justify-content-center">
+				<p class="heading">Apply For <span id="jobname"></span></p>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
 			<form method="post" action="{{ url('/apply-job') }}"  enctype="multipart/form-data">
-				<div class="modal-body">
+				<div class="modal-body text-center">
 					@csrf
 					<div class="form-group">
 						<label for="name" class="col-form-label">Name:</label>
-						<input type="text" class="form-control" id="name" name="name" required="1">
+						<input type="text" placeholder="Your Name" class="form-control" id="name" name="name" required="1">
 					</div>
 					<div class="form-group">
 						<label for="email" class="col-form-label">Email:</label>
-						<input type="email" class="form-control" id="email" name="email" required="1" >
+						<input type="email" placeholder="Your Email" class="form-control" id="email" name="email" required="1" >
 					</div>
 					<div class="form-group">
 						<label for="phone" class="col-form-label">Phone Number:</label>
-						<input type="text" class="form-control" id="phone" name="phone" required="1" >
+						<input type="number" placeholder="Your Phone Number" class="form-control" id="phone" name="phone" required="1" >
 					</div>
 					<div class="form-group">
 						<label  class="col-form-label">Attach Your file Here:</label>
@@ -82,7 +85,7 @@
 					<input type="hidden" id="job_title" name="job_title" value="" >
 					<input type="hidden" id="job_id" name="job_id" value="">
 				</div>
-				<div class="modal-footer">
+				<div class="modal-footer flex-center">
 					<input type="submit" class="btn btn-success" value="Submit">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 				</div>
