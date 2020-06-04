@@ -59,15 +59,7 @@ class JobsController extends Controller
                 'last_registration_date' => 'required',
                 'content' => 'required',
             ]);
-        dd($validatedData);
             
-if ($validatedData->fails()) {
-        dd($validatedData);
-
-            return redirect('post/create')
-            ->withErrors($validator)
-            ->withInput();
-        }
             $last_registration_unix = strtotime($request->input('last_registration_date'));
             $today_unix = time();
             if($last_registration_unix < $today_unix){

@@ -60,8 +60,18 @@ class HomeController extends Controller
 		],
 		['captcha.captcha'=>'Invalid captcha code.',
 		'phone.phone'=>'Invalid phone number format.'],);
+		$extension = $request->file('uploaded_file')->getClientOriginalExtension();
+		
+		if($request->file('uploaded_file')->getSize() > 4096){
+			return redirect('/')->with('alert-success','Max size CV file is 4MB!');
+		}
+		if($extension != 'pdf'){
+			return redirect('/')->with('alert-success','File CV must be in PDF format!');
+		}
+		
 
 		$file = $request->file('uploaded_file');
+		
 	 
 		$nama_file = time()."_".$file->getClientOriginalName();
 	 
