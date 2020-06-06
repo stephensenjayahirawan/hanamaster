@@ -220,6 +220,8 @@
 
 })(jQuery);
 $(document).ready(function() {
+    $('#preloader').hide();
+  
   if ($('#isError').length != '0') {
     $('#errorMessageModal').modal('show');
   }
@@ -237,7 +239,13 @@ $(document).ready(function() {
     $('#jobname').html($(this).attr('job_title'));
 
   });
-
+  $("#applyJobForm").submit(function(event) {
+    $("#preloader").show('slow');
+  });
+  $("#btnSubmitJob").click(function(event) {
+    $("div.spanner").addClass("show");
+    $("div.overlay").addClass("show");
+  });
   $('#refresh').click(function(){
     $.ajax({
        type:'GET',

@@ -96,13 +96,15 @@ class HomeController extends Controller
 		$Applicants->job_id = $request->input('job_id');
 		
 		$Applicants->save();
+		$mails = ['info@hanamaster.co.id', $Applicants->email];
 		$details = [
 			'title' => $request->input('job_title'),
 			'body' => 'This is for testing email using smtp',
 			'application_no' => $application_no,
 			'name' => $Applicants->name,
 			'mail_to' => $Applicants->email,
-			'uploaded_file' => $tujuan_upload.'/'.$nama_file
+			'uploaded_file' => $tujuan_upload.'/'.$nama_file,
+			'mails_to' => $mails
 		];
 
 		\Mail::to($Applicants->email)->send(new \App\Mail\EmailController($details));
