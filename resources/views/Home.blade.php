@@ -354,7 +354,7 @@
 
 		<!-- ======= Team Section ======= -->
 		@include("section.contact_us")
-
+@include("section.market")
 		<!-- ======= Contact Section ======= -->
 		<section id="contact" class="contact">
 			<div class="container" data-aos="fade-up">
