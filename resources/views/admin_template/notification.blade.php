@@ -13,4 +13,4 @@
                 {{Session::get('alert')}}
         </div>
     </div>
- @endif
+@endif

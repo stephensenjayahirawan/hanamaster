@@ -29,8 +29,11 @@ class EmailController extends Mailable
 	public function build()
 	{
 		return $this->subject('Applying for '. $this->details['title'])
-					->from('info@hanamaster.co.id')
+					->from('no-reply@hanamaster.co.id')
 					->view('emails.template_email', $this->details)
-					->attach($this->details['uploaded_file']);
+					->attach($this->details['uploaded_file'])
+					->replyTo('info@hanamaster.co.id')
+					->to($this->details['mails_to']);
+
 	}
 }

@@ -48,15 +48,15 @@
 					@csrf
 					<div class="form-group">
 						<label for="name" class="col-form-label">Name:</label>
-						<input type="text" placeholder="Your Name" class="form-control" id="name" name="name" required="1">
+						<input type="text" placeholder="Your Name" value="{{ old('name') }}" class="form-control" id="name" name="name" required="1">
 					</div>
 					<div class="form-group">
 						<label for="email" class="col-form-label">Email:</label>
-						<input type="email" placeholder="Your Email" class="form-control" id="email" name="email" required="1" >
+						<input type="email" placeholder="Your Email" class="form-control" value="{{ old('email') }}"  id="email" name="email" required="1" >
 					</div>
 					<div class="form-group">
 						<label for="phone" class="col-form-label">Phone Number:</label>
-						<input type="number" placeholder="Your Phone Number" class="form-control" id="phone" name="phone" required="1" >
+						<input type="number" placeholder="Your Phone Number" class="form-control" value="{{ old('phone') }}"  id="phone" name="phone" required="1" >
 					</div>
 					<div class="form-group">
 						<label  class="col-form-label">Attach Your file Here:</label>
