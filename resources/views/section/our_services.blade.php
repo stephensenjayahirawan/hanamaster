@@ -109,6 +109,17 @@
 
 							</div>    
 						</section>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="/assets/img/services/4.jpg" class="img-fluid" alt="" style="height: 100%">
+							</div>
+							<div class="col-sm-4">
+								<img src="/assets/img/services/5.jpg" class="img-fluid" alt=""  style="height: 100%">
+							</div>
+							<div class="col-sm-4">
+								<img src="/assets/img/services/6.jpg" class="img-fluid" alt=""  style="height: 100%">
+							</div>
+						</div>
 					</div>
 
 
@@ -131,11 +142,38 @@
 
 							</div>    
 						</section>
-
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="/assets/img/services/7.jpg" class="img-fluid" alt="" style="height: 100%">
+							</div>
+							<div class="col-sm-4">
+								<img src="/assets/img/services/8.jpg" class="img-fluid" alt=""  style="height: 100%">
+							</div>
+							<div class="col-sm-4">
+								<img src="/assets/img/services/9.jpg" class="img-fluid" alt=""  style="height: 100%">
+							</div>
+						</div>
 					</div>
 
 					<div class="portfolio-item filter-power">
 						<h1>Power Transformer Assembly</h1>
+						<section class="about">
+							<div class="container aos-init aos-animate" data-aos="fade-up">
+								<div class="row">
+
+									<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+										<p>Hana Master produces custom transformers and similar wire wound electrical parts. The markets served are primarily medical, military, and instrumentation, but we are also able to custom design and build our products for virtually any application.</p>
+										<br>
+										<p>Our primary strength is our ability to make your engineering concepts into products and deliver reasonable quantities in relatively short periods of time. </p>
+									</div>
+
+									<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+
+									</div>
+								</div>
+
+							</div>    
+						</section>
 					</div>
 
 
