@@ -33,5 +33,42 @@
             </div>
         </div>
     </div>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover dataTables-example" >
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Job Name</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone Number</th>
+                                            <th>Created At</th> 
+                                        </tr>
+                                    </thed>
+                                    <tbody>
+                                        @if (count($applicant) > 0)
+                                        @foreach($applicant as $index => $app)
+                                        <tr>
+                                            <td>{{$index+=1}}</td>
+                                            <td>{{$app->title}}</td>
+                                            <td>{{$app->name}}</td>
+                                            <td>
+                                            {{$app->email}}
+                                            </td>
+                                            <td>{{$app->phone_number}}</td>
+                                            <td>{{$app->created_at}}</td>
+                                        </tr>
+                                        @endforeach 
+                                        @endif
+                                        @if (count($applicant) <= 0)
+                                        <tr>
+                                            <td colspan="6">No Data</td>
+                                        </tr>
+                                        @endif
+                                    </tbody>
+                                    <tfoot>
+                                    </tfoot>
+                                </table>
+                            </div>
 </div>
 @include("admin_template.footer")

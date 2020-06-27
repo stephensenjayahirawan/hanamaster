@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Admin;
 use App\Jobs;
+use App\Applicants;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Auth;
@@ -52,7 +53,8 @@ class AdminController extends Controller
             $today_date = date('Y-m-d');
             $job_active = Jobs::where([['valid_to','>=', $today_date], ['is_deleted', 0]])->count();
             $job_expired = Jobs::where([['valid_to','<', $today_date], ['is_deleted', 0]])->count();
-            return view('admin/dashboard', compact(array('title', 'dashboard', 'job_active', 'job_expired')));
+            $applicant = Applicants::join('Jobs','jobs.id','=','Applicants.job_id')->select('Applicants.*','Jobs.title')->get();
+            return view('admin/dashboard', compact(array('title', 'dashboard', 'job_active', 'job_expired','applicant')));
         }
         else{
             return redirect('/admin');
