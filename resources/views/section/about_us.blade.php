@@ -210,6 +210,7 @@
 						</div>
 					</div>
 				</div>
+				
 				<section id="our_values" class="about">
 			<div class="container" data-aos="fade-up">
 				<div class="row">

@@ -60,7 +60,7 @@ class HomeController extends Controller
     		'captcha' => 'required|captcha'
 		],
 		['captcha.captcha'=>'Invalid captcha code.',
-		'phone.phone'=>'Invalid phone number format.'],);
+		'phone.phone'=>'Invalid phone number format.']);
 		$extension = $request->file('uploaded_file')->getClientOriginalExtension();
 		// print_r($request->file('uploaded_file')->getSize());
 		// print_r($extension);
