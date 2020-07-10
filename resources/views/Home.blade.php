@@ -46,9 +46,11 @@
 	<header id="header" class="fixed-top ">
 		<div class="container d-flex align-items-center justify-content-between">
 
-			<h1 class="logo"><a href="index.html">Gp<span>.</span></a></h1>
-			<!-- Uncomment below if you prefer to use an image logo -->
-			<!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+			{{-- <h1 class="logo"><a href="index.html">Gp<span>.</span></a></h1> --}}
+			{{-- Uncomment below if you prefer to use an image logo --}}
+			 <a href="" class="logo">
+			 	<img src="assets/img/logo.png" alt="" class="img-fluid">
+			 </a>
 
 			<nav class="nav-menu d-none d-lg-block">
 				<ul>
@@ -79,6 +81,7 @@
 				<div class="col-xl-6 col-lg-8">
 					<h1>Delivering values for your innovation<span>.</span></h1>
 					<h2 style="font-size:18px">PT Hana Master Jaya (HMJ) is an established Indonesian Electronic Manufacturing Service (EMS) company, specializing in manufacturing of auto insert, Surface Mount Technology (SMT) Process, printed circuit boards (PCB) assembly, transformer assembly and metal stamping for the electronic industry. The company has been active in this market since 1996.</h2>
+					<a href=""><h4>Learn More</h4></a>
 				</div>
 			</div>
 
@@ -386,6 +389,123 @@
 										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 									</div>
 								</div>
+							</div>
+						</div><!-- End .content-->
+					</div>
+				</div>
+
+			</div>
+		</section><!-- End Counts Section -->
+
+		<!-- ======= Testimonials Section ======= -->
+		<section id="testimonials" class="testimonials">
+			<div class="container" data-aos="zoom-in">
+
+				<div class="owl-carousel testimonials-carousel">
+
+					<div class="testimonial-item">
+						<img src="/assets/img/iso-14001.webp" class="testimonial-img" alt="">
+						<h3>Saul Goodman</h3>
+						<h4>Ceo &amp; Founder</h4>
+						<p>
+							<i class="bx bxs-quote-alt-left quote-icon-left"></i>
+							Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+							<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+						</p>
+					</div>
+
+					<div class="testimonial-item">
+						<img src="/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+						<h3>Sara Wilsson</h3>
+						<h4>Designer</h4>
+						<p>
+							<i class="bx bxs-quote-alt-left quote-icon-left"></i>
+							Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+							<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+						</p>
+					</div>
+
+					<div class="testimonial-item">
+						<img src="/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+						<h3>Jena Karlis</h3>
+						<h4>Store Owner</h4>
+						<p>
+							<i class="bx bxs-quote-alt-left quote-icon-left"></i>
+							Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+							<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+						</p>
+					</div>
+
+					<div class="testimonial-item">
+						<img src="/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+						<h3>Matt Brandon</h3>
+						<h4>Freelancer</h4>
+						<p>
+							<i class="bx bxs-quote-alt-left quote-icon-left"></i>
+							Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+							<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+						</p>
+					</div>
+
+					<div class="testimonial-item">
+						<img src="/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+						<h3>John Larson</h3>
+						<h4>Entrepreneur</h4>
+						<p>
+							<i class="bx bxs-quote-alt-left quote-icon-left"></i>
+							Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+							<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+		</section><!-- End Testimonials Section -->
+
+		@include("section.careers")
+
+		<!-- ======= Team Section ======= -->
+		@include("section.contact_us")
+
+		<!-- ======= Contact Section ======= -->
+		<section id="contact" class="contact">
+			<div class="container" data-aos="fade-up">
+
+				<div class="section-title">
+					<h2>Contact</h2>
+					<p>Contact Us</p>
+				</div>
+
+				<div>
+					<iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0760294489723!2d107.49498561407954!3d-6.881495395027322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e4dbaab21481%3A0x3e6715d778acd91f!2sPT%20Hana%20Master%20Jaya!5e0!3m2!1sen!2sid!4v1590090585296!5m2!1sen!2sid" frameborder="0" allowfullscreen></iframe>
+				</div>
+
+			</div>
+		</section><!-- End Contact Section -->
+
+	</main><!-- End #main -->
+
+	<!-- ======= Footer ======= -->
+	<footer id="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-3 col-md-6">
+						<div class="footer-info">
+							<h3>Gp<span>.</span></h3>
+							<p>
+								Jl. Cibingbin, No. 99 Desa Laksana Mekar, RT 03/RW03, Laksanamekar, Padalarang, Kabupaten Bandung Barat,Jawa Barat 40553,Indonesia
+								<strong>Phone:</strong> +62 22 6865432<br>
+								<strong>Email:</strong> info@hanamaster.co.id<br>
+							</p>
+							<div class="social-links mt-3">
+								<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+								<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+								<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+								<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+								<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
 							</div>
 						</div>
 						<script>
