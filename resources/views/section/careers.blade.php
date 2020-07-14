@@ -1,15 +1,16 @@
 <section id="careers">
 	<div class="container" data-aos="fade-up">
+		
 		@if (count($jobs) == 0)
 		<h3>Sory, There is not any job opening for now.</h3>
 		@else
-
 		<div class="section-title">
 			<h2 >Build your career with us</h2>
 		</div>
 		<h4>
 			We are one Indonesian and big electronic manufacture company, is looking for candidates for the following positions:
 		</h4>
+		
 		@foreach ($jobs as $index => $job)
 		<button class="accordion-job_vacancy">{{$index+=1}}. {{ $job->title }}</button>
 		<div class="panel-job_vacancy">
