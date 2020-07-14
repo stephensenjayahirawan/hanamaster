@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(12, 26, 89, 0.8);
+  background: rgba(255,255,255, 0.9);
 }
 
 #header .logo {
@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #fff;
+  color: #0001f9;
   transition: 0.3s;
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
@@ -212,12 +212,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   font-weight: 500;
   text-transform: none;
-  color: #151515;
+  color: #0001f9;
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #151515;
-  background: #0c1a59 ;
+  color: #fff;
+  background: #0001f9 ;
 }
 
 .nav-menu .drop-down > a:after {
