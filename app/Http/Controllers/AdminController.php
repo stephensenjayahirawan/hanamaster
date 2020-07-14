@@ -53,7 +53,7 @@ class AdminController extends Controller
             $today_date = date('Y-m-d');
             $job_active = Jobs::where([['valid_to','>=', $today_date], ['is_deleted', 0]])->count();
             $job_expired = Jobs::where([['valid_to','<', $today_date], ['is_deleted', 0]])->count();
-            $applicant = Applicants::join('Jobs','jobs.id','=','Applicants.job_id')->select('Applicants.*','Jobs.title')->get();
+            $applicant = Applicants::join('jobs','jobs.id','=','applicants.job_id')->select('applicants.*','jobs.title')->get();
             return view('admin/dashboard', compact(array('title', 'dashboard', 'job_active', 'job_expired','applicant')));
         }
         else{

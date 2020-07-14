@@ -164,16 +164,31 @@
 
   // Porfolio isotope and filter
   $(window).on('load', function() {
-    var portfolioIsotope = $('.portfolio-container').isotope({
+    var portfolioIsotope = $('#services .portfolio-container').isotope({
       itemSelector: '.portfolio-item',
       filter: '.filter-smt'
     });
 
-    $('#portfolio-flters li').on('click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
+    var ourMarket = $('#market .portfolio-container').isotope({
+      itemSelector: '.portfolio-item',
+      filter: '.filter-medical-equipment'
+    });
+    $('#portfolio-flters-services li').on('click', function() {
+      $("#portfolio-flters-services li").removeClass('filter-active');
       $(this).addClass('filter-active');
 
       portfolioIsotope.isotope({
+        filter: $(this).data('filter')
+      });
+      aos_init();
+    });
+
+
+    $('#portfolio-flters-market li').on('click', function() {
+      $("#portfolio-flters-market li").removeClass('filter-active');
+      $(this).addClass('filter-active');
+
+      ourMarket.isotope({
         filter: $(this).data('filter')
       });
       aos_init();
@@ -226,7 +241,7 @@ $(document).ready(function() {
     $('#errorMessageModal').modal('show');
   }
   $('#validatedCustomFile').change(function(event) {
-    if (this.files[0].size/1024 > 200) {
+    if (this.files[0].size/1024 > 5000) {
       alert("File yang anda upload sebesar "+this.files[0].size/1024 + " KB");
       $('#validatedCustomFile').val('');
     }else {

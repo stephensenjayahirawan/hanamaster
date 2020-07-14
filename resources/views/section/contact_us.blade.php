@@ -1,12 +1,10 @@
 <section id="contact_us" class="team">
 	<div class="container" data-aos="fade-up">
-
 		<div class="section-title">
 			<h2>Contact US</h2>
 			<p>Check our Team</p>
 		</div>
 		<div class="row">
-
 			<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
 				<div class="member" data-aos="fade-up" data-aos-delay="100">
 					<div class="member-img">
