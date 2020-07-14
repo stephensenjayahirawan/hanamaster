@@ -30,37 +30,37 @@
 						
 					</div>
 
-					<div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200" data-toggle="modal" data-target="#ms">
+					<div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200" >
 						<div class="icon-box">
 							<div class="icon"><i class="bx bx-file" style="color: white;"></i></div>
 							<h4>Metal Stamping</h4>
 							<p>Over 5 years experience in custom manufacturing in steel, aluminum, copper, and other metals.</p>
 							<br>
-							<button type="button" class="btn btn-primary btnDiv" data-toggle="modal" data-target="#smt">
+							<button type="button" class="btn btn-primary btnDiv" data-toggle="modal" data-target="#ms">
    							 Learn More
 							</button>
 						</div>
 					</div>
 
-					<div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="300" data-toggle="modal" data-target="#wh">
+					<div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="300" >
 						<div class="icon-box">
 							<div class="icon"><i class="bx bx-tachometer" style="color: white;"></i></div>
 							<h4>Wire Harness</h4>
 							<p>Complete solutions including prototyping, validation and manufacturing of wiring harnesses for electrical and electronic equipment.</p>
 							<br>
-							<button type="button" class="btn btn-primary btnDiv" data-toggle="modal" data-target="#smt">
+							<button type="button" class="btn btn-primary btnDiv" data-toggle="modal" data-target="#wh">
    							 Learn More
 							</button>
 						</div>
 					</div>
 
-					<div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="400" data-toggle="modal" data-target="#pta">
+					<div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="400" >
 						<div class="icon-box">
 							<div class="icon"><i class="bx bx-world" style="color: white;"></i></div>
 							<h4>Power Transformer Assembly</h4>
 							<p>Our power transformers are built with copper windings in a circular configuration and are continuous disc and/or helical in design which  helps to ensure quality and reliability throughout the internal structure of the transformer.</p>
 							<br>
-							<button type="button" class="btn btn-primary btnDiv" data-toggle="modal" data-target="#smt">
+							<button type="button" class="btn btn-primary btnDiv" data-toggle="modal" data-target="#pta">
    							 Learn More
 							</button>
 						</div>
