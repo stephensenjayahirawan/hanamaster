@@ -93,49 +93,7 @@
 		
 		@include('section.about_us')
 		<!-- ======= Services Section ======= -->
-		<section id="" class="services">
-			<div class="container" data-aos="fade-up">
-
-				<div class="section-title">
-					<h2>Our Services</h2>
-
-				</div>
-
-				<div class="row">
-					<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-						<div class="icon-box">
-							<div class="icon"><i class="bx bxl-dribbble" style="color: white;"></i></div>
-							<h4><a href="">Surface Mount Technology (SMT)</a></h4>
-							<p>State-of-the-art equipment for SMT, plant's utilities that was enhanced with clean environment, and plenty experience.</p>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-						<div class="icon-box">
-							<div class="icon"><i class="bx bx-file" style="color: white;"></i></div>
-							<h4><a href="">Metal Stamping</a></h4>
-							<p>Over 5 years experience in custom manufacturing in steel, aluminum, copper, and other metals.</p>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="300">
-						<div class="icon-box">
-							<div class="icon"><i class="bx bx-tachometer" style="color: white;"></i></div>
-							<h4><a href="">Wire Harness</a></h4>
-							<p>Complete solutions including prototyping, validation and manufacturing of wiring harnesses for electrical and electronic equipment.</p>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="400">
-						<div class="icon-box">
-							<div class="icon"><i class="bx bx-world" style="color: white;"></i></div>
-							<h4><a href="">Power Transformer Assembly</a></h4>
-							<p>Our power transformers are built with copper windings in a circular configuration and are continuous disc and/or helical in design which  helps to ensure quality and reliability throughout the internal structure of the transformer.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section><!-- End Services Section -->
+		<!-- End Services Section -->
 
 		<!-- ======= our Services Section ======= -->
 		@include("section.our_services")

@@ -1,83 +1,113 @@
-
-<section id="services" class="portfolio">
+<section id="services" class="services">
 	<div class="container" data-aos="fade-up">
-		<div class="section-title">
-			<h2 >Our Services</h2>
-		</div>
-		<div class="row" data-aos="fade-up" data-aos-delay="100">
-			<div class="col-lg-12 d-flex justify-content-center">
-				<ul class="portfolio-flters" id="portfolio-flters-services">
-					<li data-filter=".filter-smt" class="filter-active">Surface Mount Technology (SMT)</li>
-					<li data-filter=".filter-metal">Metal Stamping</li>
-					<li data-filter=".filter-wire">Wire Harness</li>
-					<li data-filter=".filter-power">Power Transformer Assembly</li>
-				</ul>
-			</div>
-		</div>
-		<div class="row portfolio-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-			<div class=" portfolio-item filter-smt">
-				<h2>SMT (Surface Mount Technology)</h2>
-				<section  class="about">
-					<div class="container aos-init aos-animate" data-aos="fade-up">
 
-						<div class="row">
+				<div class="section-title">
+					<h2>Our Services</h2>
 
-							<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
-								<p class="font-italic">
-									State-of-the-art equipment for SMT.
-								</p>
-								<ul>
-									<li><i class="ri-check-double-line"></i>Solder cream printer</li>
-								</ul>
+				</div>
 
-								<p>
-									Fine-pitch printing by house made high-precision metal stencil.
-								</p>
-								<ul>
-									<li><i class="ri-check-double-line"></i>Mounter</li>
-								</ul>
-
-								<p>
-									Minimum Chip (0402), narrow gap
-								</p>
-								<ul>
-									<li><i class="ri-check-double-line"></i>AOI</li>
-									<li><i class="ri-check-double-line"></i>Reflow equipment</li>
-									<li><i class="ri-check-double-line"></i>Cleaning equipment</li>
-								</ul>
-
-								<p>
-									Flux cleansing (direct path methods)
-								</p>
-								<ul>
-									<li><i class="ri-check-double-line"></i>X-ray inspection equipment</li>
-								</ul>
-
-
-							</div>
-							<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
-
-								<p>
-									Plant's utilities that was enhanced with clean environment
-								</p>
-								<ul>
-									<li><i class="ri-check-double-line"></i>Surface Mounting and assembly in a clean room condition.</li>
-									<li><i class="ri-check-double-line"></i>Optimum temperature and humidity environment (20-28℃/40-70%) for electronic packaging</li>
-									<li><i class="ri-check-double-line"></i>Electrostatic discharge of factory area (100 V or less)</li>
-								</ul>
-
-								<p>
-									Plenty of SMT and product assembly experience.
-								</p>
-								<ul>
-									<li>
-										<i class="ri-check-double-line"></i>Widely covered assembly technology from discrete device assembly to module assembly.
-									</li>
-								</ul>
-							</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" data-toggle="modal" data-target="#smt">
+						<div class="icon-box">
+							<div class="icon"><i class="bx bxl-dribbble" style="color: white;"></i></div>
+							<h4><a href="">Surface Mount Technology (SMT)</a></h4>
+							<p>State-of-the-art equipment for SMT, plant's utilities that was enhanced with clean environment, and plenty experience.</p>
 						</div>
 					</div>
-				</section>
+
+					<div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200" data-toggle="modal" data-target="#ms">
+						<div class="icon-box">
+							<div class="icon"><i class="bx bx-file" style="color: white;"></i></div>
+							<h4><a href="">Metal Stamping</a></h4>
+							<p>Over 5 years experience in custom manufacturing in steel, aluminum, copper, and other metals.</p>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="300" data-toggle="modal" data-target="#wh">
+						<div class="icon-box">
+							<div class="icon"><i class="bx bx-tachometer" style="color: white;"></i></div>
+							<h4><a href="">Wire Harness</a></h4>
+							<p>Complete solutions including prototyping, validation and manufacturing of wiring harnesses for electrical and electronic equipment.</p>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="400" data-toggle="modal" data-target="#pta">
+						<div class="icon-box">
+							<div class="icon"><i class="bx bx-world" style="color: white;"></i></div>
+							<h4><a href="">Power Transformer Assembly</a></h4>
+							<p>Our power transformers are built with copper windings in a circular configuration and are continuous disc and/or helical in design which  helps to ensure quality and reliability throughout the internal structure of the transformer.</p>
+						</div>
+					</div>
+				</div>
+	</div>
+</section>
+
+<!-- Modal SMT -->
+<div class="modal" id="smt">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+		<h2 class= "">SMT (Surface Mount Technology)</h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+		<section  class="about">
+			<div class="container aos-init aos-animate" data-aos="fade-up">
+				<div class="row">
+					<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+						<p class="font-italic">
+							State-of-the-art equipment for SMT.
+						</p>
+						<ul>
+							<li><i class="ri-check-double-line"></i>Solder cream printer</li>
+						</ul>
+						<p>
+							Fine-pitch printing by house made high-precision metal stencil.
+						</p>
+						<ul>
+							<li><i class="ri-check-double-line"></i>Mounter</li>
+						</ul>
+						<p>
+							Minimum Chip (0402), narrow gap
+						</p>
+						<ul>
+							<li><i class="ri-check-double-line"></i>AOI</li>
+							<li><i class="ri-check-double-line"></i>Reflow equipment</li>
+							<li><i class="ri-check-double-line"></i>Cleaning equipment</li>
+						</ul>
+						<p>
+							Flux cleansing (direct path methods)
+						</p>
+						<ul>
+							<li><i class="ri-check-double-line"></i>X-ray inspection equipment</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+						<p>
+							Plant's utilities that was enhanced with clean environment
+						</p>
+						<ul>
+							<li><i class="ri-check-double-line"></i>Surface Mounting and assembly in a clean room condition.</li>
+							<li><i class="ri-check-double-line"></i>Optimum temperature and humidity environment (20-28℃/40-70%) for electronic packaging</li>
+							<li><i class="ri-check-double-line"></i>Electrostatic discharge of factory area (100 V or less)</li>
+						</ul>
+
+						<p>
+							Plenty of SMT and product assembly experience.
+						</p>
+						<ul>
+							<li>
+								<i class="ri-check-double-line"></i>Widely covered assembly technology from discrete device assembly to module assembly.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
 				<div class="row">
 					<div class="col-sm-4">
 						<img src="/assets/img/services/1.jpg" class="img-fluid" alt="" style="height: 100%">
@@ -89,25 +119,44 @@
 						<img src="/assets/img/services/3.jpg" class="img-fluid" alt=""  style="height: 100%">
 					</div>
 				</div>
-			</div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+</div>
+<!-- end Modal SMT -->
 
-			<div class="portfolio-item filter-metal">
-				<h1>Metal Stamping</h1>
-				<section class="about">
-					<div class="container aos-init aos-animate" data-aos="fade-up">
-						<div class="row">
 
-							<div class="col-sm-12 text-justify" data-aos="fade-right" data-aos-delay="100">
-								<p>For over 5 years, Hana Master Jaya have done custom manufacturing in steel, aluminum, copper, and other metals. Our years of experience and tool capabilities are put to work to make your job easier. Hana Master assures the customers with reliability and quality.</p>
-							</div>
 
-							<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+<!-- Modal metal stamping -->
+<div class="modal" id="ms">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+		<h2 class= "">Metal Stamping</h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+		<section class="about">
+			<div class="container aos-init aos-animate" data-aos="fade-up">
+				<div class="row">
 
-							</div>
-						</div>
+					<div class="col-sm-12 text-justify" data-aos="fade-right" data-aos-delay="100">
+						<p>For over 5 years, Hana Master Jaya have done custom manufacturing in steel, aluminum, copper, and other metals. Our years of experience and tool capabilities are put to work to make your job easier. Hana Master assures the customers with reliability and quality.</p>
+					</div>
+				</div>
 
-					</div>    
-				</section>
+			</div>    
+		</section>
 				<div class="row">
 					<div class="col-sm-4">
 						<img src="/assets/img/services/4.jpg" class="img-fluid" alt="" style="height: 100%">
@@ -119,26 +168,43 @@
 						<img src="/assets/img/services/6.jpg" class="img-fluid" alt=""  style="height: 100%">
 					</div>
 				</div>
-			</div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+</div>
+<!-- end Modal metal stamping -->
 
+<!-- Modal Wire Harness -->
+<div class="modal" id="wh">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+		<h2 class= "">Wire Harness</h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+		<section class="about">
+			<div class="container aos-init aos-animate" data-aos="fade-up">
+				<div class="row">
 
-			<div class=" portfolio-item filter-wire">
-				<h1>Wire Harness</h1>
-				<section class="about">
-					<div class="container aos-init aos-animate" data-aos="fade-up">
-						<div class="row">
-
-							<div class="col-sm-12 content aos-init aos-animate text-justify" data-aos="fade-right" data-aos-delay="100">
-								<p>Hana Master Jaya provides complete solutions including prototyping, validation and manufacturing of wiring harnesses for electrical and electronic equipment.</p>
-								<br>
-								<p>The complete vertical integration for manufacturing critical wiring harness components like wires, connectors, terminals, grommets, junction boxes, relay boxes, protectors etc., enables Hana Master Jaya to provide quality products with reduced time to market. The capability of designing and manufacturing of jigs, fixtures, applicators, circuit checking & assembly boards, supported by high quality facilities for wiring harness & component testing, makes the company a full system solutions provider.</p>
-							</div>
-
-							<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
-							</div>
-						</div>
-					</div>    
-				</section>
+					<div class="col-sm-12 content aos-init aos-animate text-justify" data-aos="fade-right" data-aos-delay="100">
+						<p>Hana Master Jaya provides complete solutions including prototyping, validation and manufacturing of wiring harnesses for electrical and electronic equipment.</p>
+						<br>
+						<p>The complete vertical integration for manufacturing critical wiring harness components like wires, connectors, terminals, grommets, junction boxes, relay boxes, protectors etc., enables Hana Master Jaya to provide quality products with reduced time to market. The capability of designing and manufacturing of jigs, fixtures, applicators, circuit checking & assembly boards, supported by high quality facilities for wiring harness & component testing, makes the company a full system solutions provider.</p>
+					</div>
+				</div>
+			</div>    
+		</section>
 				<div class="row">
 					<div class="col-sm-4">
 						<img src="/assets/img/services/7.jpg" class="img-fluid" alt="" style="height: 100%">
@@ -150,24 +216,50 @@
 						<img src="/assets/img/services/9.jpg" class="img-fluid" alt=""  style="height: 100%">
 					</div>
 				</div>
-			</div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+</div>
+<!-- end Modal Wire Harness -->
 
-			<div class="portfolio-item filter-power">
-				<h1>Power Transformer Assembly</h1>
-				<section class="about">
-					<div class="container aos-init aos-animate" data-aos="fade-up">
-						<div class="row">
-							<div class="col-sm-12 content aos-init aos-animate text-justify" data-aos="fade-right" data-aos-delay="100">
-								<p>Hana Master produces custom transformers and similar wire wound electrical parts. The markets served are primarily medical, military, and instrumentation, but we are also able to custom design and build our products for virtually any application.</p>
-								<br>
-								<p>Our primary strength is our ability to make your engineering concepts into products and deliver reasonable quantities in relatively short periods of time. </p>
-							</div>
-							<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
-							</div>
+<!-- Modal Power Transformer Assembly -->
+<div class="modal" id="pta">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+		<h2 class= "">Power Transformer Assembly</h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+			<section class="about">
+				<div class="container aos-init aos-animate" data-aos="fade-up">
+					<div class="row">
+						<div class="col-sm-12 content aos-init aos-animate text-justify" data-aos="fade-right" data-aos-delay="100">
+							<p>Hana Master produces custom transformers and similar wire wound electrical parts. The markets served are primarily medical, military, and instrumentation, but we are also able to custom design and build our products for virtually any application.</p>
+							<br>
+							<p>Our primary strength is our ability to make your engineering concepts into products and deliver reasonable quantities in relatively short periods of time. </p>
 						</div>
-					</div>    
-				</section>
-			</div>
-		</div>
-	</div>
-</section>
+					</div>
+				</div>    
+			</section>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+</div>
+<!-- end Modal Power Transformer Assembly -->
