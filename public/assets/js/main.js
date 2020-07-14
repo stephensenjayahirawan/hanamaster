@@ -165,9 +165,10 @@
   // Porfolio isotope and filter
   $(window).on('load', function() {
     var ourMarket = $('#market .portfolio-container').isotope({
-      itemSelector: '.portfolio-item'
+      itemSelector: '.portfolio-item',
+      // filter: '.filter-medical-equipment'
     });
-
+    
     $('#portfolio-flters-market li').on('click', function() {
       $("#portfolio-flters-market li").removeClass('filter-active');
       $(this).addClass('filter-active');

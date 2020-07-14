@@ -537,6 +537,41 @@ section {
   color: #151515;
 }
 
+
+.section-subtitle {
+  padding-bottom: 40px;
+}
+
+.section-subtitle h2 {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-subtitle h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #0001f9 ;
+  margin: 4px 10px;
+}
+
+.section-subtitle p {
+  margin: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #151515;
+}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/

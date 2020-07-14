@@ -1,6 +1,6 @@
 <section id="market" class="portfolio">
 	<div class="container" data-aos="fade-up">
-		<div class="section-title">
+		<div class="section-subtitle">
 			<h2>Our Market</h2>
 		</div> 
 
@@ -15,18 +15,21 @@
 			<div class="col-lg-12 d-flex justify-content-center">
 				<ul class="portfolio-flters" id="portfolio-flters-market">
 					<li data-filter="*" class="filter-active">All</li>
-					<li data-filter=".filter-medical-equipment">Medical Equipment</li>
+					<li data-filter=".filter-medical-equipment" id="medical_button">Medical Equipment</li>
 					<li data-filter=".filter-automotive">Automotive</li>
-					<li data-filter=".filter-smart-energy-industrial">Smart Energy Industrial</li>
+					<li data-filter=".filter-smart">Smart Energy Industrial</li>
 					<li data-filter=".filter-retail">Retail / Consumer Goods</li>
 					<li data-filter=".filter-home">Home Appliances</li>
 				</ul>
 			</div>
 		</div>
+		<br>
 		<div class="portfolio-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
 
 			<div class="col-lg-12 col-sm-12 portfolio-item filter-medical-equipment">
-				<h3>Medical Equipment</h3>
+				<div class="section-subtitle">
+				<h2>Medical Equipment</h2>
+				</div>
 				<div class="row">
 					<div class="col-lg-8 pt-4" data-aos="fade-right" data-aos-delay="100">
 						<p>
@@ -44,8 +47,15 @@
 					</div>
 				</div>
 			</div>
+			{{-- <div class="col-lg-12 col-sm-12 portfolio-item filter-hr">
+				<hr>
+			</div> --}}
+
 			<div class="col-lg-12 col-sm-12 portfolio-item filter-automotive">
-				<h3>Automotive</h3>
+				<div class="section-subtitle">
+				<h2>Automotive</h2>
+				</div>
+
 				<div class="row">
 					<div class="col-lg-8 pt-4" data-aos="fade-right" data-aos-delay="100">
 						<p>
@@ -63,8 +73,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-12 col-sm-12 portfolio-item filter-automotive">
-				<h3>Smart Energy Industrial</h3>
+
+			{{-- <div class="col-lg-12 col-sm-12 portfolio-item filter-hr">
+				<hr>
+			</div> --}}
+
+			<div class="col-lg-12 col-sm-12 portfolio-item filter-smart">
+				<div class="section-subtitle">
+					<h2>Smart Energy Industrial</h2>
+				</div>
+
 				<div class="row">
 					<div class="col-lg-6 pt-4" data-aos="fade-right" data-aos-delay="100">
 						<p>
@@ -89,8 +107,15 @@
 					</div> 
 				</div>
 			</div>
+
+			{{-- <div class="col-lg-12 col-sm-12 portfolio-item filter-hr">
+				<hr>
+			</div> --}}
+
 			<div class="col-lg-12 col-sm-12 portfolio-item filter-retail">
-				<h3>Retail / Consumer Goods</h3>
+				<div class="section-subtitle">
+				<h2>Retail / Consumer Goods</h2>
+				</div>
 				<div class="row">
 					<div class="col-lg-12 col-sm-12 pt-4" data-aos="fade-right" data-aos-delay="100">
 						Hana Master provides a complete range of highly flexible manufacturing. We always strive to help support customer’s needs meet demand from our customers. From new product introduction to high-volume production, these services are customized to deliver flexibility, cost effectiveness and exceptional delivery performance throughout our manufacturing services. From cash registers, typewriters, EDC machines, and other electronic assembly needs, Hana Master is the solution to your electronic assembly needs.
@@ -123,8 +148,16 @@
 					</div>
 				</div>
 			</div>
+
+			{{-- <div class="col-lg-12 col-sm-12 portfolio-item filter-hr">
+				<hr style="color:blue;">
+			</div> --}}
+
 			<div class="col-lg-12 col-sm-12 portfolio-item filter-home">
-				<h3>Home Appliances</h3>
+				<div class="section-subtitle">
+					<h2>Home Appliances</h2>
+				</div>
+
 				<div class="row">
 					<div class="col-lg-8 pt-4" data-aos="fade-right" data-aos-delay="100">
 						<p>
