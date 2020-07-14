@@ -1,3 +1,4 @@
+
 <section id="services" class="portfolio">
 	<div class="container" data-aos="fade-up">
 		<div class="section-title">
@@ -15,7 +16,7 @@
 		</div>
 		<div class="row portfolio-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
 			<div class=" portfolio-item filter-smt">
-				<h1>SMT (Surface Mount Technology)</h1>
+				<h2>SMT (Surface Mount Technology)</h2>
 				<section  class="about">
 					<div class="container aos-init aos-animate" data-aos="fade-up">
 
