@@ -30,7 +30,7 @@
                         <div class="row">
                             <div class="col-lg-8 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
                                 <p>
-                                 Advancements in science and engineering have joined together to create next-generation medical technologies that are helping us live longer and better. In an increasingly evolving marketplace, customers need strong partners to accelerate safe product launches and improve cost structures. Hana Master has successfully helped customer to deliver a wide range of products integrating the latest in medical equipment.
+                                 Advancements in science and engineering have joined together to create next-generation medical technologies that are helping us live longer and better.In an increasingly evolving marketplace, customers need strong partners to accelerate safe product launches and improve cost structures. Hana Master has successfully helped customer to deliver a wide range of products integrating the latest in medical equipment.
                              </p>
                          </div>
                          <div class="col-lg-4 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
@@ -79,7 +79,7 @@
                 <div class="container aos-init aos-animate" data-aos="fade-up">
                     <div class="row">
                         <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
-                            Hana Master have always prioritized reliability and productivity as critical to deliver its service. We helped customers to produce the best quality with reduced cost and great speed to the market.  Hana Master’s specialty is in complex and multi-technology electromechanical products — from industrial automation and controls, test and measurement. We produce high-quality industrial smart meters , PJU lamp, and transformers for industrial needs.
+                            Hana Master have always prioritized reliability and productivity as critical to deliver its service. We helped customers to produce the best quality with reduced cost and great speed to the market. Hana Master’s specialty is in complex and multi-technology electromechanical products — from industrial automation and controls, test and measurement. We produce high-quality industrial smart meters , PJU lamp, and transformers for industrial needs.
                         </div>
                         <div class="col-lg-3 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
                             <div class="text-center">
