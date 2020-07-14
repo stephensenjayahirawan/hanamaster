@@ -164,25 +164,9 @@
 
   // Porfolio isotope and filter
   $(window).on('load', function() {
-    var portfolioIsotope = $('#services .portfolio-container').isotope({
-      itemSelector: '.portfolio-item',
-      filter: '.filter-smt'
-    });
-
     var ourMarket = $('#market .portfolio-container').isotope({
-      itemSelector: '.portfolio-item',
-      filter: '.filter-medical-equipment'
+      itemSelector: '.portfolio-item'
     });
-    $('#portfolio-flters-services li').on('click', function() {
-      $("#portfolio-flters-services li").removeClass('filter-active');
-      $(this).addClass('filter-active');
-
-      portfolioIsotope.isotope({
-        filter: $(this).data('filter')
-      });
-      aos_init();
-    });
-
 
     $('#portfolio-flters-market li').on('click', function() {
       $("#portfolio-flters-market li").removeClass('filter-active');
