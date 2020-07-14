@@ -301,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #fff;
+  color: #0001f9;
 }
 
 .mobile-nav {
@@ -336,9 +336,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #151515;
+  color: #fff;
   text-decoration: none;
-  background: #0c1a59 ;
+  background: #0001f9 ;
 }
 
 .mobile-nav .drop-down > a:after {
