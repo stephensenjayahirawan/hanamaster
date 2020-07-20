@@ -6,7 +6,7 @@
                 <li class="nav-header">
                     <div class="dropdown profile-element"> <span>
                             <div align="center">
-                                <img alt="image"  src="/assets/img/logo.png" />
+                                <img alt="image" style="width: 100%" src="/assets/img/logo-bg-white.png" />
                             </div>
                             </span>
                     </div>

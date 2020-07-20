@@ -255,4 +255,8 @@ $(document).ready(function() {
        }
     });
   });
+  setTimeout(function() {
+    $( "#medical_button" ).trigger( "click" );
+  }, 5000);
+    
 });

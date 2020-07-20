@@ -65,7 +65,7 @@
 
 					<div class="col-lg-4 pt-4" data-aos="fade-right" data-aos-delay="100">
 						<div class="text-center">
-							<img src="/assets/img/services/CA.jpg" class="img-fluid" alt="Car Lamp"> 
+							<img src="/assets/img/services/Ca.jpg" class="img-fluid" alt="Car Lamp"> 
 						</div> 
 						<div class="text-center">
 							Car Lamp

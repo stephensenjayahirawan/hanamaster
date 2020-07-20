@@ -22,7 +22,7 @@
         <div class="row">
 
             <div class="col-md-6" align="center">
-                <img style="margin-top:50px;" src="/assets/img/logo.png">
+                <img style="margin-top:50px; width: 100%" src="/assets/img/logo.png">
                 <h2 class="font-bold">Admin Page</h2>
             </div>
             <div class="col-md-6">
