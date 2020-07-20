@@ -507,7 +507,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 500;
   padding: 0;
   line-height: 1px;
@@ -526,7 +526,27 @@ section {
   background: #0001f9 ;
   margin: 4px 10px;
 }
+@media only screen and (max-device-width : 450px) {
+/* Styles */
 
+  .section-subtitle h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: none;
+    background: #0001f9 ;
+    margin: 4px 10px;
+  }
+
+  .section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: none;
+    background: #0001f9 ;
+    margin: 4px 10px;
+  }
+}
 .section-title p {
   margin: 0;
   margin: 0;
