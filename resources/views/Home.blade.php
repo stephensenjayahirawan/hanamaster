@@ -113,7 +113,7 @@
 						<div class="footer-info">
 							<h3>PT Hana Master Jaya<span>.</span></h3>
 							<p>
-								Jl. Cibingbin, No. 99 Desa Laksana Mekar, RT 03/RW03, Laksanamekar, Padalarang, Kabupaten Bandung Barat,Jawa Barat 40553,Indonesia
+								Jl. Cibingbin, No. 99 Desa Laksana Mekar, RT 03/RW03, Laksanamekar, Padalarang, Kabupaten Bandung Barat,Jawa Barat 40553,Indonesia <br>
 								<strong>Phone:</strong> +62 22 6865432<br>
 								<strong>Email:</strong> info@hanamaster.co.id<br>
 							</p>

@@ -526,7 +526,7 @@ section {
   background: #0001f9 ;
   margin: 4px 10px;
 }
-@media only screen and (max-device-width : 450px) {
+@media only screen and (max-device-width : 550px) {
 /* Styles */
 
   .section-subtitle h2::after {
