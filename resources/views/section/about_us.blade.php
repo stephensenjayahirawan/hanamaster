@@ -25,61 +25,61 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<h5 class="col-sm-4 text-right">Company Name:</h5>   
+				<h5 class="col-sm-4 text-left"><span style="font-weight:bold;">Company Name:</span></h5>   
 				<h5 class="col-sm-8 text-left">PT Hana Master Jaya</h5>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-				<h5 class="col-sm-4 text-right">Established:</h5>   
+				<h5 class="col-sm-4 text-left"><span style="font-weight:bold;">Established:</span></h5>   
 				<h5 class="col-sm-8 text-left">July 1996</h5>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-				<h5 class="col-sm-4 text-right">Address:</h5>   
+				<h5 class="col-sm-4 text-left"><span style="font-weight:bold;">Address:</span></h5>   
 				<h5 class="col-sm-8 text-left">Jl. Cibingbin, No. 99 Desa Laksana Mekar, RT03/RW03, Laksanamekar, Padalarang, Kabupaten Bandung Barat, Jawa Barat Indonesia 40553</h5>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-				<h5 class="col-sm-4 text-right">Phone:</h5>   
-				<h5 class="col-sm-8 text-left">+62 22 6865432</h5>
+				<h5 class="col-sm-4 text-left"><span style="font-weight:bold;">Phone:</span></h5>   
+				<h5 class="col-sm-8 text-left"><a href="tel:+62-22-6865432">+62 22 6865432</a></h5>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-				<h5 class="col-sm-4 text-right">Fax:</h5>   
-				<h5 class="col-sm-8 text-left">+62 22 6864555</h5>
+				<h5 class="col-sm-4 text-left"><span style="font-weight:bold;">Fax:</span></h5>   
+				<h5 class="col-sm-8 text-left"><a href="tel:+62-22-6864555">+62 22 6864555</a></h5>
 			</div>
 		</div>	
 		<div class="container">
 			<div class="row">
-				<h5 class="col-sm-4 text-right">Email Address:</h5>   
-				<h5 class="col-sm-8 text-left">info@hanamaster.co.id / hanamaster.jaya@gmail.com</h5>
+				<h5 class="col-sm-4 text-left"><span style="font-weight:bold;">Email Address:</span></h5>   
+				<h5 class="col-sm-8 text-left"><a href="mailto:info@hanamaster.co.id">info@hanamaster.co.id</a> / <a href="mailto:hanamaster.jaya@gmail.com">hanamaster.jaya@gmail.com</a></h5>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-				<h5 class="col-sm-4 text-right">Website:</h5>   
-				<h5 class="col-sm-8 text-left">www.hanamaster.co.id</h5>
+				<h5 class="col-sm-4 text-rileftght"><span style="font-weight:bold;">Website:</span></h5>   
+				<h5 class="col-sm-8 text-left"><a href="<?php echo url('/');?>">www.hanamaster.co.id</a></h5>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-				<h5 class="col-sm-4 text-right">Land Area:</h5>   
+				<h5 class="col-sm-4 text-left"><span style="font-weight:bold;">Land Area:</span></h5>   
 				<h5 class="col-sm-8 text-left">30,000 sqm</h5>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-				<h5 class="col-sm-4 text-right">Built Area:</h5>   
+				<h5 class="col-sm-4 text-left"><span style="font-weight:bold;">Built Area:</span></h5>   
 				<h5 class="col-sm-8 text-left">8,000 sqm (Plant 1) 3,000 sqm (Plant 2)</h5>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-				<h5 class="col-sm-4 text-right">Business:</h5>   
+				<h5 class="col-sm-4 text-left"><span style="font-weight:bold;">Business:</span></h5>   
 				<h5 class="col-sm-8 text-left">EMS services for international and domestic market, metal stamping, wire harness</h5>
 			</div>
 		</div>

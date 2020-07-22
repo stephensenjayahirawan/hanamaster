@@ -140,7 +140,7 @@
 
 		<div class="container">
 			<div class="copyright">
-				&copy; Copyright 2020. PT. Hana Master Jaya
+				&copy; Copyright 2020. PT. HANA MASTER JAYA
 			</div>
 			<div class="credits">
 
