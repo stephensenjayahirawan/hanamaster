@@ -31,12 +31,6 @@
 	<link href="/assets/css/style.css" rel="stylesheet">
 	<link href="/assets/css/custom.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Gp - v2.0.0
-  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -115,9 +109,9 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-5 col-md-6">
 						<div class="footer-info">
-							<h3>Hanasmaster<span>.</span></h3>
+							<h3>PT Hana Master Jaya<span>.</span></h3>
 							<p>
 								Jl. Cibingbin, No. 99 Desa Laksana Mekar, RT 03/RW03, Laksanamekar, Padalarang, Kabupaten Bandung Barat,Jawa Barat 40553,Indonesia
 								<strong>Phone:</strong> +62 22 6865432<br>

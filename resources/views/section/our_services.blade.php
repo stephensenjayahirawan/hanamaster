@@ -5,6 +5,11 @@
   left: 25%;
   bottom: 5%;
   position: absolute;
+
+  .btnClose{
+	z-index: 1;
+	position: absolute;
+  }
 }
 </style>
 
@@ -77,11 +82,12 @@
         <!-- Modal Header -->
         <div class="modal-header">
 		<h2 class= "">SMT (Surface Mount Technology)</h2>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
         </div>
         
         <!-- Modal body -->
         <div class="modal-body">
+		<button type="button" class="close btnClose" data-dismiss="modal">&times;</button>
 		<section  class="about">
 			<div class="container aos-init aos-animate" data-aos="fade-up">
 				<div class="row">
@@ -145,6 +151,13 @@
 					<div class="col-sm-4">
 						<img src="/assets/img/services/3.jpg" class="img-fluid" alt=""  style="height: 100%">
 					</div>
+										
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-sm-4">
+						<img src="/assets/img/services/10.jpg" class="img-fluid" alt=""  style="height: 100%">
+					</div>
 				</div>
         </div>
         
@@ -168,11 +181,11 @@
         <!-- Modal Header -->
         <div class="modal-header">
 		<h2 class= "">Metal Stamping</h2>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         
         <!-- Modal body -->
         <div class="modal-body">
+		<button type="button" class="close btnClose" data-dismiss="modal">&times;</button>
 		<section class="about">
 			<div class="container aos-init aos-animate" data-aos="fade-up">
 				<div class="row">
@@ -215,11 +228,11 @@
         <!-- Modal Header -->
         <div class="modal-header">
 		<h2 class= "">Wire Harness</h2>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         
         <!-- Modal body -->
         <div class="modal-body">
+		<button type="button" class="close btnClose" data-dismiss="modal">&times;</button>
 		<section class="about">
 			<div class="container aos-init aos-animate" data-aos="fade-up">
 				<div class="row">
@@ -263,11 +276,11 @@
         <!-- Modal Header -->
         <div class="modal-header">
 		<h2 class= "">Power Transformer Assembly</h2>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         
         <!-- Modal body -->
         <div class="modal-body">
+		<button type="button" class="close btnClose" data-dismiss="modal">&times;</button>
 			<section class="about">
 				<div class="container aos-init aos-animate" data-aos="fade-up">
 					<div class="row">
@@ -279,6 +292,16 @@
 					</div>
 				</div>    
 			</section>
+			<div class="row">
+					<div class="col-sm-4">
+						<img src="/assets/img/services/11.jpg" class="img-fluid" alt="" style="height: 100%">
+					</div>
+					<div class="col-sm-4">
+						<img src="/assets/img/services/12.jpg" class="img-fluid" alt=""  style="height: 100%">
+					</div>
+					
+										
+			</div>
         </div>
         
         <!-- Modal footer -->
