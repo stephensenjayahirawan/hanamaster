@@ -74,7 +74,7 @@
 			<div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
 				<div class="col-xl-6 col-lg-8">
 					<h1>Delivering values for your innovation.</h1>
-					<h2 style="font-size:18px">PT Hana Master Jaya (HMJ) is an established Indonesian Electronic Manufacturing Service (EMS) company, specializing in manufacturing of auto insert, Surface Mount Technology (SMT) Process, printed circuit boards (PCB) assembly, transformer assembly and metal stamping for the electronic industry. The company has been active in this market since 1996.</h2>
+					<h2 style="font-size:18px">PT. Hana Master Jaya (HMJ) is an established Indonesian Electronic Manufacturing Service (EMS) company, specializing in manufacturing of auto insert, Surface Mount Technology (SMT) Process, printed circuit boards (PCB) assembly, transformer assembly and metal stamping for the electronic industry. The company has been active in this market since 1996.</h2>
 					<br>
 					<a  href="#who_we_are" class="btn btn-outline-light"><h4 style="margin-bottom: 0px">Learn More</h4></a>
 				</div>
@@ -111,7 +111,7 @@
 
 					<div class="col-lg-5 col-md-6">
 						<div class="footer-info">
-							<h3>PT Hana Master Jaya<span>.</span></h3>
+							<h3>PT. Hana Master Jaya<span>.</span></h3>
 							<p>
 								Jl. Cibingbin, No. 99 Desa Laksana Mekar, RT 03/RW03, Laksanamekar, Padalarang, Kabupaten Bandung Barat,Jawa Barat 40553,Indonesia <br>
 								<strong>Phone:</strong> +62 22 6865432<br>

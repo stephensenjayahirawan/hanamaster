@@ -3,36 +3,10 @@
 		<div class="section-title">
 			<h2>Contact US</h2>
 		</div>
-		<div class="row">
-			<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-				<div class="member" data-aos="fade-up" data-aos-delay="100">
-					<div class="member-img">
-						
-						<div class="social">
-							<a href=""><i class="icofont-twitter"></i></a>
-							<a href=""><i class="icofont-facebook"></i></a>
-							<a href=""><i class="icofont-instagram"></i></a>
-							<a href=""><i class="icofont-linkedin"></i></a>
-						</div>
-					</div>
-					<div class="member-info">
-						<h4>Richard Gunawan</h4>
-						<a href="mailto:richard.hmj@gmail.com"><span>richard.hmj@gmail.com</span></a>					
-					</div>
-				</div>
-			</div>
+		<div class="row col-lg-12 col-md-12">
 
-			<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-				<div class="member" data-aos="fade-up" data-aos-delay="200">
-					<div class="member-img">
-					
-						<div class="social">
-							<a href=""><i class="icofont-twitter"></i></a>
-							<a href=""><i class="icofont-facebook"></i></a>
-							<a href=""><i class="icofont-instagram"></i></a>
-							<a href=""><i class="icofont-linkedin"></i></a>
-						</div>
-					</div>
+			<div class="row col-lg-4 col-md-12 d-flex" style="width:800px; margin:0 auto">
+				<div class="member" style="text-align: center" data-aos="fade-up" data-aos-delay="200">
 					<div class="member-info">
 						<h4>Agus Prihanto</h4>
 						<a href="mailto:agus.prihanto@hanamaster.co.id"><span>agus.prihanto@hanamaster.co.id</span></a>
@@ -41,35 +15,17 @@
 				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-				<div class="member" data-aos="fade-up" data-aos-delay="300">
-					<div class="member-img">
-						
-						<div class="social">
-							<a href=""><i class="icofont-twitter"></i></a>
-							<a href=""><i class="icofont-facebook"></i></a>
-							<a href=""><i class="icofont-instagram"></i></a>
-							<a href=""><i class="icofont-linkedin"></i></a>
-						</div>
-					</div>
+			<div class="row col-lg-4 col-md-12 d-flex" style="width:800px; margin:0 auto">
+				<div class="member" style="text-align: center" data-aos="fade-up" data-aos-delay="300">
 					<div class="member-info">
 						<h4>Gholib Mustofa</h4>
-						<a href="mailto:gholibmustofa@yahoo.com"><span>gholibmustofa@yahoo.com</span></a>
+						<a href="mailto:gholib_hmj@hanamaster.co.id"><span>gholib_hmj@hanamaster.co.id</span></a>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-				<div class="member" data-aos="fade-up" data-aos-delay="400">
-					<div class="member-img">
-						
-						<div class="social">
-							<a href=""><i class="icofont-twitter"></i></a>
-							<a href=""><i class="icofont-facebook"></i></a>
-							<a href=""><i class="icofont-instagram"></i></a>
-							<a href=""><i class="icofont-linkedin"></i></a>
-						</div>
-					</div>
+			<div class="row col-lg-4 col-md-12 d-flex" style="width:800px; margin:0 auto">
+				<div class="member" style="text-align: center" data-aos="fade-up" data-aos-delay="400">
 					<div class="member-info">
 						<h4>Steven Gunawan</h4>
 						<a href="mailto:steven.hg@hanamaster.co.id"><span>steven.hg@hanamaster.co.id</span></a>

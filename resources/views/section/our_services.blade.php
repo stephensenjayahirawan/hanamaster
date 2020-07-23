@@ -41,7 +41,7 @@
 			<div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200" >
 				<div class="icon-box">
 					<div class="col-sm-12">
-						<img src="/assets/img/services/4.jpg" class="img-fluid" alt="">
+						<img src="/assets/img/services/metal_sampling_1.png" class="img-fluid" alt="">
 					</div>
 					<hr>
 					<h4>Metal Stamping</h4>
@@ -154,21 +154,15 @@
 				</section>
 				<div class="row">
 					<div class="col-sm-4">
-						<img src="/assets/img/services/1.jpg" class="img-fluid" alt="" >
+						<img src="/assets/img/services/smt_1.png" class="img-fluid" alt="" >
 					</div>
 					<div class="col-sm-4">
-						<img src="/assets/img/services/2.jpg" class="img-fluid" alt=""  >
+						<img src="/assets/img/services/smt_2.png" class="img-fluid" alt=""  >
 					</div>
 					<div class="col-sm-4" style="vertical-align: middle;">
-						<img src="/assets/img/services/3.jpg" class="img-fluid" alt=""  >
+						<img src="/assets/img/services/smt_3.png" class="img-fluid" alt=""  >
 					</div>
 
-				</div>
-				<br>
-				<div class="row">
-					<div class="col-sm-4">
-						<img src="/assets/img/services/10.jpg" class="img-fluid" alt=""  >
-					</div>
 				</div>
 			</div>
 
@@ -210,7 +204,7 @@
 				</section>
 				<div class="row">
 					<div class="col-sm-4">
-						<img src="/assets/img/services/4.jpg" class="img-fluid" alt="" >
+						<img src="/assets/img/services/metal_sampling_1.png" class="img-fluid" alt="" >
 					</div>
 					<div class="col-sm-4">
 						<img src="/assets/img/services/5.jpg" class="img-fluid" alt=""  >

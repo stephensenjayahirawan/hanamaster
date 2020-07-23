@@ -98,11 +98,20 @@
 					<h2>Who We Are</h2>
 				</div>
 				<p class="font-Calibri">
-					PT Hana Master Jaya (HMJ) is an established Indonesian EMS company, specializing in manufacturing of auto insert, Surface Mount Technology (SMT) Process, printed circuit boards (PCB) assembly, transformer assembly and metal stamping for the electronic industry. The company has been active in this market since 1996. HMJ manufactures, tests, and distributes electronic assemblies for original equipment manufacturers (OEMs). Due to a commitment to providing high quality results, HMJ today is the market leader in Indonesian EMS company, and have been since have become the important production center for the industry.
+					PT. Hana Master Jaya (HMJ) is an established Indonesian EMS company, specializing in manufacturing of auto insert, Surface Mount Technology (SMT) Process, printed circuit boards (PCB) assembly, transformer assembly and metal stamping for the electronic industry. The company has been active in this market since 1996. HMJ manufactures, tests, and distributes electronic assemblies for original equipment manufacturers (OEMs). Due to a commitment to providing high quality results, HMJ today is the market leader in Indonesian EMS company, and have been since have become the important production center for the industry.
 				</p>
 				<p>
-					HMJ maintains a flexible electronic manufacturing base. Until today, HMJ have since widely supports electronic assemblies for smart meter, transformers, lamps, blood pressure monitor, cash register, with assuring the best quality, best services, low competitive price and prompt delivery to its customer.
+					HMJ’s EMS supports outsourcing for all/some manufacturing of OEM, and procurement for required components is sourced globally. Basically, HMJ can provide one-stop service by procuring components from global source, manufacturing it into PCBA/Finishes Goods, and ship out to destination. Our trading and logistic business is integrated in.
 				</p>
+				<p>
+					HMJ maintains a flexible electronic manufacturing base. Until today, HMJ have since widely accommodate customer needs as below:
+					<ul style="list-style-type:circle; margin-left:20px;">
+						<li>EMS for international and domestic market (turnkey/consignment business)</li>
+						<li>Metal Stamping</li>
+						<li>Wire harness</li>
+					</ul>
+				</p>
+				
 			</div>
 		</div>
 
@@ -117,19 +126,13 @@
 		</div>
 		<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
 			<div class="section-title">
-				<h2>Logistics</h2>
+				<h2>Trading/Logistics</h2>
 			</div>
 			<p class="font-Calibri text-justify">
 				‘Co-ordinated global sourcing and delivery’
 			</p>
 			<p class="font-Calibri text-justify">
-				Logistics management is a complex system and involves various departments in a company: from purchasing and stock management to the financial department. The logistical process within HMJ correspondent for flexibility and punctuality. Because of an intelligent ERP system HMJ has optimized purchasing, production, inventory, and delivery.
-			</p>
-			<p class="font-Calibri text-justify">
-				HMJ products are widely varied; there are many different model/product systems for different customers. Components and basic materials are bought from a vast number of manufacturers worldwide. This diversity calls for a tight logistical planning.
-			</p>
-			<p class="font-Calibri text-justify">
-				As soon as orders from customers arrive, HMJ is able to respond immediately and thus to deliver correctly and quickly. This cross-frontier service yields that distinguishing quality so valued by our customers.
+				From wide range of procurement sources to excellent logistics network within our reach, all of these things greatly supports our global sourcing of components and materials. We also support logistics needs for customers who wants to import components even export their finished product.  We always aim for on time, cost-saving, and excellent condition delivery for our customers.
 			</p>
 		</div>
 	</div>

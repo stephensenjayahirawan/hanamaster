@@ -8,7 +8,7 @@
 			<h2 >Build your career with us</h2>
 		</div>
 		<h4>
-			We are one Indonesian and big electronic manufacture company, is looking for candidates for the following positions:
+			We are one Indonesian electronic manufacture company, is looking for candidates for the following positions:
 		</h4>
 		
 		@foreach ($jobs as $index => $job)

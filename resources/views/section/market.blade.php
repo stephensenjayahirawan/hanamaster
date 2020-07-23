@@ -33,7 +33,7 @@
 				<div class="row">
 					<div class="col-lg-8 pt-4" data-aos="fade-right" data-aos-delay="100">
 						<p>
-							Advancements in science and engineering have joined together to create next-generation medical technologies that are helping us live longer and better.In an increasingly evolving marketplace, customers need strong partners to accelerate safe product launches and improve cost structures. Hana Master has successfully helped customer to deliver a wide range of products integrating the latest in medical equipment.
+							Advancements in science and engineering have joined together to create next-generation medical technologies that are helping us live longer and better. In an increasingly evolving marketplace, customers need strong partners to accelerate safe product launches and improve cost structures. Hana Master has successfully helped customer to deliver a wide range of products integrating the latest in medical equipment.
 						</p>
 					</div>
 					<div class="col-lg-4 pt-4" data-aos="fade-right" data-aos-delay="100">
@@ -57,9 +57,9 @@
 				</div>
 
 				<div class="row">
-					<div class="col-lg-8 pt-4" data-aos="fade-right" data-aos-delay="100">
+					<div class="col-lg-4 pt-4" data-aos="fade-right" data-aos-delay="100">
 						<p>
-							Hana Master is an end-to-end electronic manufacturing service that enable customers to quickly and efficiently meet major trends in the automotive & transportation industries, Hana Master provides a complete range of a flexible manufacturing and promised to meet quality standards from our customers. We always strive to help customer’s needs and demand.
+							Hana Master is an end-to-end electronic manufacturing service that enable customers to quickly and efficiently meet major trends in the automotive & transportation industries. We specialized in manufacturing PCBA to Finish Good for automotive needs, such as Head Unit and Car Lamp. Hana Master provides a complete range of a flexible manufacturing and promised to meet quality standards from our customers. We always strive to help customer’s needs and demand.
 						</p>
 					</div>
 
@@ -69,6 +69,14 @@
 						</div> 
 						<div class="text-center">
 							Car Lamp
+						</div>    
+					</div>
+					<div class="col-lg-4 pt-4" data-aos="fade-right" data-aos-delay="100">
+						<div class="text-center">
+							<img src="/assets/img/services/car_audio.png" class="img-fluid" alt="Car Lamp"> 
+						</div> 
+						<div class="text-center">
+							Car Audio
 						</div>    
 					</div>
 				</div>
