@@ -33,7 +33,14 @@
             </div>
         </div>
     </div>
-                            <div class="table-responsive">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Applicants List</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="table-responsive">
                                 <table class="table table-striped table-bordered table-hover dataTables-example" >
                                     <thead>
                                         <tr>
@@ -70,5 +77,10 @@
                                     </tfoot>
                                 </table>
                             </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                            
 </div>
 @include("admin_template.footer")
