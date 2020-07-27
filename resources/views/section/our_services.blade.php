@@ -17,8 +17,8 @@
 	<div class="container" data-aos="fade-up">
 
 		<div class="section-title">
-			<h2>Our Services</h2>
-
+			<p>Our Services</p>
+			<hr style="background-color:#0001f9">
 		</div>
 
 		<div class="row">

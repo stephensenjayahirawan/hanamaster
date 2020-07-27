@@ -1,7 +1,9 @@
 <section id="market" class="portfolio">
 	<div class="container" data-aos="fade-up">
 		<div class="section-subtitle">
-			<h2>Our Market</h2>
+			
+			<p>Our Market</p>
+			<hr style="background-color:#0001f9; width:50%; float:left;">
 		</div> 
 
 		<h2 class="col-sm-12 text-center">Accelerating Electronic Technology class</h2>
@@ -28,7 +30,8 @@
 
 			<div class="col-lg-12 col-sm-12 portfolio-item filter-medical-equipment">
 				<div class="section-subtitle">
-				<h2>Medical Equipment</h2>
+					<p>Medical Equipment</p>
+					<hr style="background-color:#0001f9; width:30%; float:left;">
 				</div>
 				<div class="row">
 					<div class="col-lg-8 pt-4" data-aos="fade-right" data-aos-delay="100">
@@ -53,7 +56,8 @@
 
 			<div class="col-lg-12 col-sm-12 portfolio-item filter-automotive">
 				<div class="section-subtitle">
-				<h2>Automotive</h2>
+					<p>Automotive</p>
+					<hr style="background-color:#0001f9; width:30%; float:left;">
 				</div>
 
 				<div class="row">
@@ -88,7 +92,8 @@
 
 			<div class="col-lg-12 col-sm-12 portfolio-item filter-smart">
 				<div class="section-subtitle">
-					<h2>Smart Energy Industrial</h2>
+					<p>Smart Energy Industrial</p>
+					<hr style="background-color:#0001f9; width:30%; float:left;">
 				</div>
 
 				<div class="row">
@@ -122,7 +127,8 @@
 
 			<div class="col-lg-12 col-sm-12 portfolio-item filter-retail">
 				<div class="section-subtitle">
-				<h2>Retail / Consumer Goods</h2>
+					<p>Retail / Consumer Goods</p>
+					<hr style="background-color:#0001f9; width:30%; float:left;">
 				</div>
 				<div class="row">
 					<div class="col-lg-12 col-sm-12 pt-4" data-aos="fade-right" data-aos-delay="100">
@@ -163,7 +169,8 @@
 
 			<div class="col-lg-12 col-sm-12 portfolio-item filter-home">
 				<div class="section-subtitle">
-					<h2>Home Appliances</h2>
+					<p>Home Appliances</p>
+					<hr style="background-color:#0001f9; width:30%; float:left;">
 				</div>
 
 				<div class="row">

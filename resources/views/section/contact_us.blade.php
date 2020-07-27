@@ -1,11 +1,12 @@
 <section id="contact_us" class="team">
 	<div class="container" data-aos="fade-up">
 		<div class="section-title">
-			<h2>Contact US</h2>
+			<p>Contact Us</p>
+			<hr style="background-color:#0001f9; width:50%; float:left;">
 		</div>
 		<div class="row col-lg-12 col-md-12">
 
-			<div class="row col-lg-4 col-md-12 d-flex" style="width:800px; margin:0 auto">
+			<div class="row col-lg-4 col-md-12 d-flex">
 				<div class="member" style="text-align: center" data-aos="fade-up" data-aos-delay="200">
 					<div class="member-info">
 						<h4>Agus Prihanto</h4>
@@ -15,7 +16,7 @@
 				</div>
 			</div>
 
-			<div class="row col-lg-4 col-md-12 d-flex" style="width:800px; margin:0 auto">
+			<div class="row col-lg-4 col-md-12 d-flex">
 				<div class="member" style="text-align: center" data-aos="fade-up" data-aos-delay="300">
 					<div class="member-info">
 						<h4>Gholib Mustofa</h4>
@@ -24,7 +25,7 @@
 				</div>
 			</div>
 
-			<div class="row col-lg-4 col-md-12 d-flex" style="width:800px; margin:0 auto">
+			<div class="row col-lg-4 col-md-12 d-flex">
 				<div class="member" style="text-align: center" data-aos="fade-up" data-aos-delay="400">
 					<div class="member-info">
 						<h4>Steven Gunawan</h4>
