@@ -42,8 +42,8 @@
 
 			{{-- <h1 class="logo"><a href="index.html">Gp<span>.</span></a></h1> --}}
 			{{-- Uncomment below if you prefer to use an image logo --}}
-			<a href=""  style="height: 50px;">
-				<img src="assets/img/logo.png" alt="" style="height: 66px; width: 158px" >
+			<a href="<?php echo url('/');?>" >
+				<img src="assets/img/logo.png" alt="" style="height: 20%px; width: 30%" >
 			</a>
 
 			<nav class="nav-menu d-none d-lg-block">

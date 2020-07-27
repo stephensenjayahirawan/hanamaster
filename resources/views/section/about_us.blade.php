@@ -9,8 +9,8 @@
 			</div>
 			<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 text-justify content" data-aos="fade-right" data-aos-delay="100">
 				<div class="section-title">
-					<h2>About Us</h2>
 					<p>Headquarter</p>
+					<hr style="background-color:#0001f9; width:50%; float:left;">
 				</div>
 				<p class="font-Calibri text-justify" >
 					PT Hana Master Jaya headquarter is located in Bandung Barat, Indonesia. The team coordinates and oversees various operations including sales and marketing, purchasing, and logistics. We ensure that lead times for products are short and a high degree of flexibility and skill are guaranteed.
@@ -22,8 +22,8 @@
 <section id="company_profile" class="Company Profile" >
 	<div class="container" data-aos="fade-up">
 		<div class="section-title">
-			<h2>About Us</h2>
-          	<p>Company Profile</p>
+			<p>Company Profile</p>
+			<hr style="background-color:#0001f9; width:50%; float:left;">
 		</div>
 		<div class="container">
 			<div class="row">
@@ -97,8 +97,8 @@
 			</div>
 			<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 text-justify content" data-aos="fade-right" data-aos-delay="100">
 				<div class="section-title">
-					<h2>About Us</h2>
-          			<p>Who We Are</p>
+					<p>Who We Are</p>
+					<hr style="background-color:#0001f9; width:50%; float:left;">
 				</div>
 				<p class="font-Calibri">
 					PT. Hana Master Jaya (HMJ) is an established Indonesian EMS company, specializing in manufacturing of auto insert, Surface Mount Technology (SMT) Process, printed circuit boards (PCB) assembly, transformer assembly and metal stamping for the electronic industry. The company has been active in this market since 1996. HMJ manufactures, tests, and distributes electronic assemblies for original equipment manufacturers (OEMs). Due to a commitment to providing high quality results, HMJ today is the market leader in Indonesian EMS company, and have been since have become the important production center for the industry.
@@ -129,8 +129,8 @@
 		</div>
 		<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
 			<div class="section-title">
-				<h2>About Us</h2>
-          		<p>Trading/Logistics</p>
+				<p>Trading / Logistics</p>
+				<hr style="background-color:#0001f9; width:50%; float:left;">
 			</div>
 			<p class="font-Calibri text-justify">
 				‘Co-ordinated global sourcing and delivery’
@@ -147,8 +147,8 @@
 		<div class="row">
 			<div class="col-lg-12 pt-4 pt-lg-0 order-2 order-lg-1 text-justify content" data-aos="fade-right" data-aos-delay="100">
 				<div class="section-title">
-					<h2>About Us</h2>
-          			<p>Living Our Values</p>
+					<p>Living Our Values</p>
+					<hr style="background-color:#0001f9; width:50%; float:left;">
 				</div>
 				<p class="font-Calibri text-justify" >
 					At Hana Master, we foster a motivated, high-integrity work environment based on a strong set of corporate Values, namely 5C. 5C drives our employees to provide you with superior service.

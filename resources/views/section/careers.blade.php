@@ -5,8 +5,8 @@
 		<h3>Sory, There is not any job opening for now.</h3>
 		@else
 		<div class="section-title">
-			<h2 >Career</h2>
-			<p >Build your career with us</p>
+			<p>Build your career with us</p>
+			<hr style="background-color:#0001f9; width:50%; float:left;">
 		</div>
 		<h4>
 			We are one Indonesian electronic manufacture company, is looking for candidates for the following positions:

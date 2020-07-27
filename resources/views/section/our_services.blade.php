@@ -18,7 +18,7 @@
 
 		<div class="section-title">
 			<p>Our Services</p>
-			<hr style="background-color:#0001f9">
+			<hr style="background-color:#0001f9; width:50%; float:left;">
 		</div>
 
 		<div class="row">
