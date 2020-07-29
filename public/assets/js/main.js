@@ -180,11 +180,7 @@
     });
 
     // Initiate venobox (lightbox feature used in portofilo)
-    $(document).ready(function() {
-      $('.venobox').venobox({
-        'share': false
-      });
-    });
+    
   });
 
   // jQuery counterUp
@@ -201,13 +197,6 @@
     items: 1
   });
 
-  // Portfolio details carousel
-  $(".portfolio-details-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
 
   // Initi AOS
   function aos_init() {
@@ -255,8 +244,5 @@ $(document).ready(function() {
        }
     });
   });
-  setTimeout(function() {
-    $( "#medical_button" ).trigger( "click" );
-  }, 5000);
     
 });

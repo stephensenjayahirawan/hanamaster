@@ -1,13 +1,13 @@
 <section id="careers">
 	<div class="container" data-aos="fade-up">
 		
-		@if (count($jobs) == 0)
-		<h3>Sory, There is not any job opening for now.</h3>
-		@else
 		<div class="section-title">
 			<p>Build your career with us</p>
 			<hr style="background-color:#0001f9; width:50%; float:left;">
 		</div>
+		@if (count($jobs) == 0)
+		<h3>Sory, There is not any job opening for now.</h3>
+		@else
 		<h4>
 			We are one Indonesian electronic manufacture company, is looking for candidates for the following positions:
 		</h4>

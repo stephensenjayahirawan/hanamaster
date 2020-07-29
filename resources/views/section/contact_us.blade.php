@@ -1,13 +1,12 @@
 <section id="contact_us" class="team">
 	<div class="container" data-aos="fade-up">
 		<div class="section-title">
-			<p>Contact Us</p>
-			<hr style="background-color:#0001f9; width:50%; float:left;">
+			<h2>Contact US</h2>
 		</div>
-		<div class="row col-lg-12 col-md-12">
+		<div class="row col-lg-12 col-md-12" style="margin:0;">
 
-			<div class="row col-lg-4 col-md-12 d-flex">
-				<div class="member" style="text-align: center" data-aos="fade-up" data-aos-delay="200">
+			<div class="row col-lg-4 col-md-12 d-flex" style="width:100%; margin:0;">
+				<div class="member" style="text-align: center;width:100%" data-aos="fade-up" data-aos-delay="200">
 					<div class="member-info">
 						<h4>Agus Prihanto</h4>
 						<a href="mailto:agus.prihanto@hanamaster.co.id"><span>agus.prihanto@hanamaster.co.id</span></a>
@@ -16,8 +15,8 @@
 				</div>
 			</div>
 
-			<div class="row col-lg-4 col-md-12 d-flex">
-				<div class="member" style="text-align: center" data-aos="fade-up" data-aos-delay="300">
+			<div class="row col-lg-4 col-md-12 d-flex" style="width:100%; margin:0;">
+				<div class="member" style="text-align: center;width:100%" data-aos="fade-up" data-aos-delay="300">
 					<div class="member-info">
 						<h4>Gholib Mustofa</h4>
 						<a href="mailto:gholib_hmj@hanamaster.co.id"><span>gholib_hmj@hanamaster.co.id</span></a>
@@ -25,8 +24,8 @@
 				</div>
 			</div>
 
-			<div class="row col-lg-4 col-md-12 d-flex">
-				<div class="member" style="text-align: center" data-aos="fade-up" data-aos-delay="400">
+			<div class="row col-lg-4 col-md-12 d-flex" style="width:100%; margin:0;">
+				<div class="member" style="text-align: center;width:100%" data-aos="fade-up" data-aos-delay="400">
 					<div class="member-info">
 						<h4>Steven Gunawan</h4>
 						<a href="mailto:steven.hg@hanamaster.co.id"><span>steven.hg@hanamaster.co.id</span></a>

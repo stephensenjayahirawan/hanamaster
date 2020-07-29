@@ -122,26 +122,27 @@
 </section><!-- End About Section -->
 
 
-<div class="container" data-aos="fade-up">
-	<div class="row">
-		<div class="col-lg-6 order-1 order-lg-2 align-self-center" data-aos="fade-left" data-aos-delay="100">
-			<img src="assets/img/Logistics.jpg" class="img-fluid" alt="">
-		</div>
-		<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-			<div class="section-title">
-				<p>Trading / Logistics</p>
-				<hr style="background-color:#0001f9; width:50%; float:left;">
+<section id="logistics" class="about">
+	<div class="container" data-aos="fade-up">
+		<div class="row">
+			<div class="col-lg-6 order-1 order-lg-2 align-self-center" data-aos="fade-left" data-aos-delay="100">
+				<img src="assets/img/Logistics.jpg" class="img-fluid" alt="">
 			</div>
-			<p class="font-Calibri text-justify">
-				‘Co-ordinated global sourcing and delivery’
-			</p>
-			<p class="font-Calibri text-justify">
-				From wide range of procurement sources to excellent logistics network within our reach, all of these things greatly supports our global sourcing of components and materials. We also support logistics needs for customers who wants to import components even export their finished product.  We always aim for on time, cost-saving, and excellent condition delivery for our customers.
-			</p>
+			<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+				<div class="section-title">
+					<p>Trading / Logistics</p>
+					<hr style="background-color:#0001f9; width:50%; float:left;">
+				</div>
+				<p class="font-Calibri text-justify">
+					‘Co-ordinated global sourcing and delivery’
+				</p>
+				<p class="font-Calibri text-justify">
+					From wide range of procurement sources to excellent logistics network within our reach, all of these things greatly supports our global sourcing of components and materials. We also support logistics needs for customers who wants to import components even export their finished product.  We always aim for on time, cost-saving, and excellent condition delivery for our customers.
+				</p>
+			</div>
 		</div>
 	</div>
-</div>
-
+</section>
 <section id="our_values" class="about">
 	<div class="container" data-aos="fade-up">
 		<div class="row">
