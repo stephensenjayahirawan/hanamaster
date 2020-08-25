@@ -30,7 +30,20 @@
 	<!-- Template Main CSS File -->
 	<link href="/assets/css/style.css" rel="stylesheet">
 	<link href="/assets/css/custom.css" rel="stylesheet">
-
+	<style>
+		.carousel {
+			width:100%;
+			height:25%;
+		}
+		.carousel-caption {
+			width: 550px;
+			left: 15%;
+			top: 50% !important;
+			transform: translateY(-50%);
+			text-align: center;
+			bottom: initial;
+		}
+	</style>
 </head>
 
 <body>
@@ -68,7 +81,45 @@
 	</header><!-- End Header -->
 
 	<!-- ======= Hero Section ======= -->
-	<section id="hero" class="d-flex align-items-center justify-content-center">
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="{{ asset('assets/img/bg1.jpg')}}" alt="First slide">
+				<div class="carousel-caption d-md-block">
+					<h5>Delivering values for your innovation.</h5>
+					<p>PT. Hana Master Jaya (HMJ) is an established Indonesian Electronic Manufacturing Service (EMS) company, specializing in manufacturing of auto insert, Surface Mount Technology (SMT) Process, printed circuit boards (PCB) assembly, transformer assembly and metal stamping for the electronic industry. The company has been active in this market since 1996.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="{{ asset('assets/img/bg2.webp')}}" alt="First slide">
+				<div class="carousel-caption d-md-block">
+					<h5>Delivering values for your innovation.</h5>
+					<p>PT. Hana Master Jaya (HMJ) is an established Indonesian Electronic Manufacturing Service (EMS) company, specializing in manufacturing of auto insert, Surface Mount Technology (SMT) Process, printed circuit boards (PCB) assembly, transformer assembly and metal stamping for the electronic industry. The company has been active in this market since 1996.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="{{ asset('assets/img/bg3.jpg')}}" alt="First slide">
+				<div class="carousel-caption d-md-block">
+					<h5>Delivering values for your innovation.</h5>
+					<p>PT. Hana Master Jaya (HMJ) is an established Indonesian Electronic Manufacturing Service (EMS) company, specializing in manufacturing of auto insert, Surface Mount Technology (SMT) Process, printed circuit boards (PCB) assembly, transformer assembly and metal stamping for the electronic industry. The company has been active in this market since 1996.</p>
+				</div>
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	{{--<section id="hero" class="d-flex align-items-center justify-content-center">
 		<div class="container" data-aos="fade-up">
 
 			<div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
@@ -80,7 +131,8 @@
 				</div>
 			</div>
 		</div>
-	</section><!-- End Hero -->
+	</section>--}}
+	<!-- End Hero -->
 
 	<main id="main">
 		<!-- ======= Company Profile ======= -->
